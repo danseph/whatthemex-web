@@ -265,24 +265,29 @@ nav ul li.on a {
     overflow: hidden;
 }
 
-#service > span {
+.serv-text {
+    width: 100%;
+    min-width: 1366px;
+}
+
+.serv-text > span {
     margin-top: 32px;
 }
 
-.surv {
+.serv {
     width: 1200px;
     margin: 60px auto 0;
 }
 
-.surv img {
+.serv img {
     width: 165px;
 }
 
-.surv p {
+.serv p {
     margin: 20px 0;
 }
 
-.surv span {
+.serv span {
     width: 200px;
 }
 /* //SERVICE */
@@ -320,11 +325,23 @@ nav ul li.on a {
     margin-top: 25px;
 }
 
+.eco-text {
+    width: 100%;
+    min-width: 1366px;
+}
+
 .eco-img {
-    width: 1200px;
-    min-width: 1200px;
+    width: 100%;
+    min-width: 1366px;
     margin: 45px auto 0;
 }
+
+.eco-img img {
+    display: block;
+    width: 1200px;
+    margin: auto;
+}
+
 /* //ECOSYSTEM */
 
 
@@ -333,6 +350,11 @@ nav ul li.on a {
     position: relative;
     padding: 205px 0 185px;
     overflow: hidden;
+}
+
+#partners > div {
+    width: 100%;
+    min-width: 1366px;
 }
 
 #partners ul {

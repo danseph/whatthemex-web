@@ -121,14 +121,16 @@
                 <div class="swiper-slide" data-id="service">
                     <!-- SERVICE -->
                     <div id="service">
-                        <h2>
-                            Service
-                        </h2>
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
-                        </span>
+                        <div class="serv-text">
+                            <h2>
+                                Service
+                            </h2>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
+                            </span>
+                        </div>
 
-                        <ul class="flex surv">
+                        <ul class="flex serv">
                             <li>
                                 <img src="./images/3piks.png" alt="ico">
                                 <p>3PIKS</p>
@@ -385,7 +387,7 @@
                         <div class="copy">
                             Vision Exchange, 2 Venture Drive #24-01 Singapore 608526
                             <br>
-                            &copy;2018 CosmicBC Pte., Ltd. All rights reserved.
+                            &copy;2019 CosmicBC Pte., Ltd. All rights reserved.
                         </div>
                     </div>
                     <!-- //CONTACT -->
@@ -399,10 +401,12 @@
         
 
         $(document).ready(function(){
+            var slideIndex = 0;
             // nav
             $("nav ul li").click(function(){
                 var idx = $(this).index();
-                swiper.slideTo(idx+1);
+                slideIndex = idx+1;
+                swiper.slideTo(slideIndex);
             });
 
             // language
@@ -428,6 +432,7 @@
 
             swiper.on('transitionEnd', function () {
                 var $target = $('.swiper-slide-active');
+                slideIndex = $target.index();
                 var id = $target.data('id');
                 clearNavActivation();
                 $('.nav-'+id).addClass("on");
@@ -438,6 +443,27 @@
                     $(this).removeClass("on");
                 });
             }
+
+            var lastWheeltime = 0;
+            $('body').on('mousewheel', function(e){
+                if(lastWheeltime > Date.now()-1000)
+                    return;
+
+                lastWheeltime = Date.now();
+
+                var delta = e.originalEvent.wheelDelta;
+                var direction = delta < 0 ? 'down' : 'up';
+                if(direction == 'down') { // down
+                    slideIndex++;
+                    if(slideIndex > 6) slideIndex = 6;
+                    swiper.slideTo(slideIndex);
+                }
+                else {
+                    slideIndex--;
+                    if(slideIndex < 0) slideIndex = 0;
+                    swiper.slideTo(slideIndex);
+                }
+            });
         });
 
         
