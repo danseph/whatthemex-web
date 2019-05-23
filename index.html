@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,465 +8,374 @@
     <title>Cosmic BC</title>
 
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/slide.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
 
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // mobile-nav
+            $(".ham-wrap").click(function() {
+                $(this).toggleClass("active");
+            });
+            // language
+            $(".lan-list").hide();
+
+            $(".lan-now, .lan-click").click(function(){
+                $(this).toggleClass("on");
+                $(".lan-list").slideToggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div class="background">
-
+    <div class="wrap">
+        
         <!-- HEADER -->
         <div class="header">
             <header class="flex">
                 <h1>
-                    <a href="javascript:void(0)">
-                        <img src="./images/logo.png" alt="logo">
+                    <a href="#main">
+                        <img src="./images/cosmicbc-icon.svg" alt="logo">
                     </a>
                 </h1>
 
-                <nav>
-                    <ul class="flex">
-                        <li class="nav-about" >
-                            <a href="#">About</a>
-                        </li>
-                        <li class="nav-service">
-                            <a href="#">Service</a>
-                        </li>
-                        <li class="nav-exchange">
-                            <a href="#">Exchange</a>
-                        </li>
-                        <li class="nav-ecosystem">
-                            <a href="#">Ecosystem</a>
-                        </li>
-                        <li class="nav-partners">
-                            <a href="#">Partners</a>
-                        </li>
-                        <li class="nav-contact">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <!-- Web Nav -->
+                <div class="web gnb flex">
+                    <nav class="web-nav">
+                        <ul class="flex">
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Service</a>
+                            </li>
+                            <li>
+                                <a href="#exchange">Solution</a>
+                            </li>
+                            <li>
+                                <a href="#ecosystem">System</a>
+                            </li>
+                            <li>
+                                <a href="#partners">Partners</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="language">
+                        <ul>
+                            <li class="lan-now">
+                                <a href="javascript:void(0)" class="kr">한국어</a>
+                            </li>
 
-                <div class="language">
-                    <ul>
-                        <li class="lan-now">
-                            <a href="javascript:void(0)">
-                                <img src="./images/usa.png" alt="flag">
-                            </a>
-                        </li>
-
-                        <li class="lan-list">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/usa.png" alt="flag">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/usa.png" alt="flag">
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                            <li class="lan-list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)"  class="en">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="kr">한국어</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"  class="sc">中文</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="jp">日本語</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- //Web Nav -->
+
+                <!-- Mobile Nav -->
+                <div class="mb ham">
+                    <div class="ham-wrap flex">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="mb gnb">
+                    <nav class="mb-nav">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">About</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Service</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Solution</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">System</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Partners</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="language">
+                        <ul>
+                            <li class="lan-click">language</li>
+
+                            <li class="lan-list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)"  class="en">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="kr">한국어</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"  class="sc">中文</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="jp">日本語</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //Mobile Nav -->
+
             </header>
         </div>
         <!-- //HEADER -->
 
-        <div class="swiper-container swiper-container-initialized swiper-container-vertical">
-            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, -8991px, 0px);">
-
-                <div class="swiper-slide" data-id="main">
-                    <!-- MAIN -->
-                    <div class="main">
-                        <div class="desc-text">
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                            </h2>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                            </span>
-                        </div>
-                        <div class="desc-img">
-                            <img src="./images/trans_main.png" alt="bg-img">
-                        </div>
-                    </div>
-                    <!-- //MAIN -->
-                </div>
-
-                <div class="swiper-slide" data-id="about">
-                    <!-- ABOUT -->
-                    <div id="about">
-                        <div class="desc-text">
-                            <h2>
-                                About Us
-                            </h2>
-                            <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
-                            </span>
-                        </div>
-                        <div class="desc-img">
-                            <img src="./images/trans_about.png" alt="bg-img">
-                        </div>
-                    </div>
-                    <!-- //ABOUT -->
-                </div>
-
-                <div class="swiper-slide" data-id="service">
-                    <!-- SERVICE -->
-                    <div id="service">
-                        <div class="serv-text">
-                            <h2>
-                                Service
-                            </h2>
-                            <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
-                            </span>
-                        </div>
-
-                        <ul class="flex serv">
-                            <li>
-                                <img src="./images/3piks.png" alt="ico">
-                                <p>3PIKS</p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea adipisci culpa, autem temporibus consequatur rerum aspernatur nostrum ullam ratione quidem odit illum quibusdam, ipsum eveniet tenetur at. Officia!</span>
-                            </li>
-                            <li>
-                                <img src="./images/ai_bitbip.png" alt="ico">
-                                <p>AI BItBip</p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea adipisci culpa, autem temporibus consequatur rerum aspernatur nostrum ullam ratione quidem odit illum quibusdam, ipsum eveniet tenetur at. Officia!</span>
-                            </li>
-                            <li>
-                                <img src="./images/ai_bot.png" alt="ico">
-                                <p>AI Ayti-Trading Bot</p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea adipisci culpa, autem temporibus consequatur rerum aspernatur nostrum ullam ratione quidem odit illum quibusdam, ipsum eveniet tenetur at. Officia!</span>
-                            </li>
-                            <li>
-                                <img src="./images/ai_pridiction.png" alt="ico">
-                                <p>AI Pridiction Platform</p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea adipisci culpa, autem temporibus consequatur rerum aspernatur nostrum ullam ratione quidem odit illum quibusdam, ipsum eveniet tenetur at. Officia!</span>
-                            </li>
-                            <li>
-                                <img src="./images/exchange.png" alt="ico">
-                                <p>Exchange Solution</p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea adipisci culpa, autem temporibus consequatur rerum aspernatur nostrum ullam ratione quidem odit illum quibusdam, ipsum eveniet tenetur at. Officia!</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //SERVICE -->
-                </div>
-                
-                <div class="swiper-slide" data-id="exchange">
-                    <!-- EXCHANGE -->
-                    <div id="exchange">
-                        <div class="desc-text">
-                            <h2>
-                                Exchange Solution
-                            </h2>
-                            <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
-                            </span>
-                        </div>
-                        <div class="desc-img ex-img">
-                            <img src="./images/bg_exchange.png" alt="bg-img">
-                        </div>
-                    </div>
-                    <!-- //EXCHANGE -->
-                </div>
-
-                <div class="swiper-slide" data-id="ecosystem">
-                    <!-- ECOSYSTEM -->
-                    <div id="ecosystem">
-                        <div class="eco-text">
-                            <h2>Ecosystem</h2>
-                            <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga exercitationem molestiae cupiditate suscipit quos culpa pariatur laboriosam nulla veniam itaque porro sed, consectetur natus cumque quisquam aliquam. Vero, unde! 
-                            </span>
-                        </div>
-                        <div class="eco-img">
-                            <img src="./images/trans_ecosystem.png" alt="bg-img">
-                        </div>
-                    </div>
-                    <!-- //ECOSYSTEM -->
-                </div>
-
-                <div class="swiper-slide" data-id="partners">
-                    <!-- PARTNERS -->
-                    <div id="partners">
-                        <div class="business">
-                            <h3>Business Partners</h3>
-                            <ul class="flex">
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/ncp.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>NCP</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/neuralbc.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>NeuralBC</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/uzbit.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Uzbit</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/coinbene.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Coinbene</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/block_inside.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Block Inside</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="infra">
-                            <h3>Infra Partners</h3>
-                            <ul class="flex">
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/kobea.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Kobea</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/cardano.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Cardano</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/emurgo.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Emurgo</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/infinito_wallet.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Infinito Wallet</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="ico">
-                                        <a href="javascript:void(0)">
-                                            <img src="./images/alpha_point.png" alt="ico">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p>Alpha Point</p>
-                                        <span>Naver Cloud Platform</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- //PARTNERS -->
-                </div>
-
-                <div class="swiper-slide" data-id="contact">
-                    <!-- CONTACT -->
-                    <div id="contact">
-                        <h3>Contact</h3>
-                        <ul class="flex">
-                            <li>
-                                <div class="ico">
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/address.png" alt="ico">
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <p>Address</p>
-                                    <span>Naver Cloud Platform</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ico">
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/email.png" alt="ico">
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <p>Email</p>
-                                    <span>Naver Cloud Platform</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ico">
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/medium.png" alt="ico">
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <p>Medium</p>
-                                    <span>Naver Cloud Platform</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ico">
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/facebook.png" alt="ico">
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <p>Facebook</p>
-                                    <span>Naver Cloud Platform</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ico">
-                                    <a href="javascript:void(0)">
-                                        <img src="./images/youtube.png" alt="ico">
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <p>Youtube</p>
-                                    <span>Naver Cloud Platform</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="copy">
-                            Vision Exchange, 2 Venture Drive #24-01 Singapore 608526
-                            <br>
-                            &copy;2019 CosmicBC Pte., Ltd. All rights reserved.
-                        </div>
-                    </div>
-                    <!-- //CONTACT -->
-                </div>
-
+        <!-- MAIN -->
+        <div id="main">
+            <div class="main-wrap">
+                <h2>
+                    <img src="./images/cosmicbc_txt.svg" alt="logo-text">
+                </h2>
+                <h3>
+                    Blockchain and
+                    <br>
+                    he future of artificial intelligence
+                </h3>
+                <p>
+                    우리는 블록체인이 오늘날의 미래라고 믿습니다.
+                    <br>
+                    사람과 삶을 발전시키고 보완하며 이러한 편리함이
+                    <br>
+                    우리 삶에 안착할 수 있도록 합니다.
+                </p>
             </div>
         </div>
+        <!-- //MAIN -->
+
+        <!-- ABOUT -->
+        <div id="about" class="flex">
+            <div class="text">
+                <h2>About Us</h2>
+                <span class="line"></span>
+                <p>
+                    COSMICBC Ltd는 2018년 설립되어, 인공지능(AI) 및 블록체인(Blockchain) 연구개발을 전문으로 하는 기업입니다.
+                    <br>
+                    당사는 블록체인을 통해 인공지능을 활용한 미들웨어 서비스를 준비중이며, 우리의 목표는 실생활에서 AI와 블록체인 기술을 융합하여 실생활에서 사용가능한 기술을 구현하기 위해 최선을 다하고 있습니다.
+                </p>
+            </div>
+
+            <div class="img">
+                <!-- <img src="" alt="about-img"> -->
+            </div>
+        </div>
+        <!-- //ABOUT -->
+
+        <!-- SERVICES -->
+        <div id="services">
+            <h2>Our Service</h2>
+            <span class="line"></span>
+            <div class="flex piks">
+                <div class="img">
+                    <!-- <img src="" alt="3piks-img"> -->
+                </div>
+                <div class="text">
+                    <h4>3PIKS</h4>
+                    <strong>AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼</strong>
+                    <p>
+                        인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex bitbip">
+                <div class="img">
+                    <!-- <img src="" alt="bitbip-img"> -->
+                </div>
+
+                <div class="text">
+                    <h4>AiBitBip</h4>
+                    <strong>AI 기반 암호화폐 가격변동 서비스</strong>
+                    <p>
+                        AI Model이 암호화폐 매매에 도움을 줄 수 있도록 상승 또는 하락 징후를 포착하여 유저들에게 푸쉬 알림을 제공하는 서비스로 편리하고 접근성이 용이하도록 어플리케이션
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex ai-bot">
+                <div class="img">
+                    <!-- <img src="" alt="aiBot-img"> -->
+                </div>
+                <div class="text">
+                    <h4>AI Auto-Trading Bot</h4>
+                    <strong>AI Prediction Signal을 바탕으로 한<br class="mb"> Auto-Trading Bot</strong>
+                    <p>
+                        AIBitBip의 Prediction Signal을 받아 정확한 타이밍에 암호화폐 매매를 하여 유저들이 수익을 볼 수 있도록 제공하는 서비스로 각 거래소에 제공하여 거래량과 암호화폐 유동성을 확보 할 수 있도록 Market을 형성
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex prediction">
+                <div class="img">
+                    <!-- <img src="" alt="prediction-img"> -->
+                </div>
+                <div class="text">
+                    <h4>AI Prediction Platform</h4>
+                    <strong>AI 연구-개발 환경 개선과 검증된 데이터확보를<br class="mb"> 해결할 수 있는 AI Prediction Platform</strong>
+                    <p>
+                        AI 연구자들이 Open Source Library 환경에 손쉽게 접근, 이용 할 수 있도록 서비스를 제공하고 Traffic 과 Model 데이터를 확보할 수 있도록 기업에 제공하는 서비스 플랫폼
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //SERVICES -->
+
+        <!-- EXCHANGE -->
+        <div id="exchange" class="flex">
+            <div class="text">
+                <h2>Exchange Solution</h2>
+                <span class="line"></span>
+                <p>
+                    기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션
+                </p>
+            </div>
+            <div class="img">
+                <!-- <img src="" alt="exchange-img"> -->
+            </div>
+        </div>
+        <!-- //EXCHANGE -->
+
+        <!-- ECOSYSTEM -->
+        <div id="ecosystem">
+            <div class="eco">
+                <h2>Eco System</h2>
+                <span class="line"></span>
+
+                <div class="img">
+                    <!-- <img src="" alt="eco-img"> -->
+                </div>
+            </div>
+        </div>
+        <!-- //ECOSYSTEM -->
+
+        <!-- PARTNERS -->
+        <div id="partners">
+            <h2>Partners</h2>
+            <span class="line"></span>
+            <div class="companies">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="" alt="partners-logo"> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //PARTNERS -->
+
+        <!-- FOOTER -->
+        <footer class="flex">
+            <div class="copy">
+                &copy;2018 CosmicBC Pte., Ltd. All Rights Reserved.
+            </div>
+            
+            <div class="sns">
+                <ul class="flex">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="./images/sns-telegram.svg" alt="sns-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="./images/sns-medium.svg" alt="sns-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="./images/sns-twitter.svg" alt="sns-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="./images/sns-youtube.svg" alt="sns-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="./images/sns-facebook.svg" alt="sns-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+    
     </div>
-
-    <script>
-
-        $(document).ready(function(){
-            var slideIndex = 0;
-            // nav
-            $("nav ul li").click(function(){
-                var idx = $(this).index();
-                slideIndex = idx+1;
-                swiper.slideTo(slideIndex);
-            });
-
-            // language
-            $(".lan-list").hide();
-
-            $(".lan-now").click(function(){
-                $(this).toggleClass("on");
-                $(".lan-list").slideToggle();
-            });
-
-            var swiper = new Swiper('.swiper-container', {
-                direction: 'vertical',
-                slidesPerView: 1,
-                // spaceBetween: 30,
-                mousewheel: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                autoHeight : true,
-                loop: false,
-            });
-
-            swiper.on('transitionEnd', function () {
-                var $target = $('.swiper-slide-active');
-                slideIndex = $target.index();
-                var id = $target.data('id');
-                clearNavActivation();
-                $('.nav-'+id).addClass("on");
-            });
-
-            function clearNavActivation() {
-                $("nav ul li").each(function(){
-                    $(this).removeClass("on");
-                });
-            }
-
-            var lastWheeltime = 0;
-            $('body').on('mousewheel', function(e){
-                if(lastWheeltime > Date.now()-1000)
-                    return;
-
-                lastWheeltime = Date.now();
-
-                var delta = e.originalEvent.wheelDelta;
-                var direction = delta < 0 ? 'down' : 'up';
-                if(direction == 'down') { // down
-                    slideIndex++;
-                    if(slideIndex > 6) slideIndex = 6;
-                    swiper.slideTo(slideIndex);
-                }
-                else {
-                    slideIndex--;
-                    if(slideIndex < 0) slideIndex = 0;
-                    swiper.slideTo(slideIndex);
-                }
-            });
-        });
-
-        
-    </script>
 </body>
 
 </html>

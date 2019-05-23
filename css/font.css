@@ -1,0 +1,98 @@
+/* 영어 */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 100;
+	src: url('./font/lato-thin.eot');
+	src: url('./font/lato-thin.eot?#iefix') format('embedded-opentype'),
+         url('./font/lato-thin.woff') format('woff'),
+         url('./font/lato-thin.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./font/lato-regular.eot');
+	src: url('./font/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('./font/lato-regular.woff') format('woff'),
+         url('./font/lato-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./font/lato-semibold.eot');
+	src: url('./font/lato-semibold.eot?#iefix') format('embedded-opentype'),
+         url('./font/lato-semibold.woff') format('woff'),
+         url('./font/lato-semibold.woff2') format('woff2');
+}
+
+/* 한국어 */
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./font/SpoqaHanSans-Thin.ttf') format('woff2'),
+         url('./font/SpoqaHanSans-Thin.woff') format('woff'),
+         url('./font/SpoqaHanSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./font/SpoqaHanSans-Regular.woff2') format('woff2'),
+         url('./font/SpoqaHanSans-Regular.woff') format('woff'),        
+         url('./font/SpoqaHanSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./font/SpoqaHanSans-Bold.woff2') format('woff2'),
+         url('./font/SpoqaHanSans-Bold.woff') format('woff'),
+         url('./font/SpoqaHanSans-Bold.ttf') format('truetype');
+}
+
+/* 중국어 */
+@font-face {
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./font/NotoSansSC-Regular.eot');
+	src: url('./font/NotoSansSC-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./font/NotoSansSC-Regular.woff2') format('woff2'),
+         url('./font/NotoSansSC-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./font/NotoSansSC-700.eot');
+	src: url('./font/NotoSansSC-700.eot?#iefix') format('embedded-opentype'),
+         url('./font/NotoSansSC-700.woff2') format('woff2'),
+         url('./font/NotoSansSC-700.woff') format('woff');
+}
+
+/* 일본어 */
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./font/SpoqaHanSansJP-Regular.woff2') format('woff2'),
+         url('./font/SpoqaHanSansJP-Regular.woff') format('woff'),        
+         url('./font/SpoqaHanSansJP-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./font/SpoqaHanSansJP-Bold.woff2') format('woff2'),
+         url('./font/SpoqaHanSansJP-Bold.woff') format('woff'),
+         url('./font/SpoqaHanSansJP-Bold.ttf') format('truetype');
+}
