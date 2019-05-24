@@ -51,7 +51,7 @@ img {
     font-weight: 400;
 }
 
-.sc {
+.zh {
     font-family: "Noto Sans SC";
     font-weight: 400;
 }
@@ -72,6 +72,11 @@ img {
 
 .text {
     width: 380px;
+}
+
+.bg-black {
+    background-color: #000;
+    transition: background-color 1s;
 }
 
 
@@ -123,7 +128,6 @@ p {
 .header {
     position: fixed;
     width: 100%;
-    background-color: #000;
     z-index: 10;
 }
 
@@ -132,11 +136,10 @@ header {
     height: 80px;
     margin: auto;
     padding: 0 15px;
-    background-color: #000;
 }
 
 h1 {
-    width: 50px;
+    width: 40px;
 }
 
 .gnb {
@@ -178,6 +181,10 @@ h1 {
     background: url(../images/cosmicbc_arrow.svg) no-repeat center right / 10px;
 }
 
+.lan-now.on {
+    background: url(../images/cosmicbc_arrow2.svg) no-repeat center right / 10px;
+}
+
 .lan-list {
     position: absolute;
     width: 100%;
@@ -211,6 +218,10 @@ h1 {
 
 
 /* MAIN */
+#main {
+    background: url(../images/main.png) no-repeat center center / 100%;
+}
+
 .main-wrap {
     width: 1200px;
     margin: auto;
@@ -243,7 +254,6 @@ h1 {
 #about .img {
     width: 680px;
     height: 415px;
-    background-color: #FFF;
 }
 /* //ABOUT */
 
@@ -270,7 +280,6 @@ h1 {
 #services .img {
     width: 480px;
     height: 175px;
-    background-color: #FFF;
 }
 
 .bitbip {
@@ -315,19 +324,18 @@ h1 {
 .ex-wrap .img {
     width: 780px;
     height: 625px;
-    background-color: #CCC;
 }
 /* //EXCHANGE */
 
 
 /* ECOSYSTEM */
 #ecosystem{
-    width: 1200px;
-    margin: auto;
     padding: 75px 15px 35px;
 }
 
 #ecosystem h2 {
+    width: 1200px;
+    margin: auto;
     text-align: center;
 }
 
@@ -336,8 +344,7 @@ h1 {
 }
 
 #ecosystem .img {
-    height: 520px;
-    background-color: #CCC;
+    min-width: 1200px;
 }
 /* //ECOSYSTEM */
 
@@ -354,7 +361,7 @@ h1 {
 }
 
 #partners .line {
-    margin: 35px auto 120px;
+    margin: 35px auto 70px;
 }
 
 .companies ul {
@@ -367,10 +374,10 @@ h1 {
 .companies li {
     display: inline-block;
     width: 135px;
-    height: 60px;
+    /* height: 60px; */
     margin-top: 35px;
     margin-left: 35px;
-    background-color: #FFF;
+    /* background-color: #FFF; */
 }
 /* //PARTNERS */
 
@@ -487,6 +494,10 @@ footer {
         transition: all 0.2s ease-in-out;
     }
 
+    .ham-wrap.active {
+        margin-right: 18px;
+    }
+
     .ham-wrap.active span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
@@ -517,6 +528,7 @@ footer {
     .gnb.open {
         opacity: 0.99;
         visibility: visible;
+        overflow-y: scroll;
     }
     
 
@@ -567,6 +579,10 @@ footer {
     
     
     /* MAIN */
+    #main {
+        background: url(../images/main_m.png) no-repeat center center / 100%;
+    }
+
     .main-wrap {
         width: auto;
         min-width: 320px;
@@ -606,7 +622,7 @@ footer {
     #about .img {
         /* width: 250px; */
         width: 75%;
-        height: 205px;
+        height: auto;
         margin: 0 auto 30px;
     }
     /* //ABOUT */
@@ -630,7 +646,7 @@ footer {
     #services .img {
         /* width: 285px; */
         width: 88%;
-        height: 105px;
+        height: auto;
         margin: auto;
     }
 
@@ -683,7 +699,7 @@ footer {
     .ex-wrap .img {
         /* width: 270px; */
         width: 80%;
-        height: 315px;
+        height: auto;
     }
     /* //EXCHANGE */
     
@@ -695,6 +711,10 @@ footer {
         padding: 40px 0 30px;
     }
 
+    #ecosystem h2 {
+        width: 100%;
+    }
+
     #ecosystem .line {
         margin: 25px auto 50px;
     }
@@ -702,7 +722,8 @@ footer {
     #ecosystem .img {
         /* width: 270px; */
         width: 80%;
-        height: 520px;
+        min-width: auto;
+        height: auto;
         margin: auto;
     }
     /* //ECOSYSTEM */
@@ -721,15 +742,14 @@ footer {
     
     .companies ul {
         /* width: 220px; */
-        width: 70%;
+        width: 75%;
     }
     
     .companies li {
         /* width: 100px; */
-        width: 45%;
-        height: 40px;
+        width: 25%;
         margin-top: 15px;
-        margin-left: 3.5%;
+        margin-left: 17%;
     }
     /* //PARTNERS */
     
@@ -739,7 +759,7 @@ footer {
         flex-direction: column-reverse;
         width: auto;
         min-width: 320px;
-        padding: 45px 0 70px;
+        padding: 60px 0 70px;
     }
     
     .copy {
@@ -753,7 +773,7 @@ footer {
     }
     
     .sns ul li {
-        width: 18px;
+        width: 12%;
     }
     
     /* //FOOTER */

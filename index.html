@@ -9,88 +9,14 @@
 
     <link rel="shortcut icon" href="./images/CB_favicon.png">
     <link rel="icon" href="./images/CB_favicon.png">
-    
+
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
 
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/locale_lang.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            applyLanguage('ko');
-
-            var arrMenuDiv;
-            // header fixed scroll , web-nav scroll
-            $(window).scroll(function(){
-                $(".header").css("left", -$(this).scrollLeft());
-
-                var y1 = $(document).scrollTop();
-                var y2 = y1 + ($(window).height() / 2);
-
-                if(!arrMenuDiv) {
-                    arrMenuDiv = [];
-                    var children = $('.wrap').children();
-                    for(var i=2; i<children.length-1; i++) {    // header, main, footer 제외
-                        arrMenuDiv.push(children[i]);
-                    }
-                }
-
-                for(var i=0; i<arrMenuDiv.length; i++) {
-                    var el = arrMenuDiv[i];
-                    if (y1 < el.offsetTop && el.offsetTop < y2) {
-                        var id = el.id;
-                        $(".web-nav a, h1").removeClass("on");
-                        $('#menu_'+id).addClass('on');
-                        break;
-                    } else if (y1 == 0) {
-                        $(".web-nav a").removeClass("on");
-                    }
-                }
-            });
-
-            // header scroll size
-            var bodyOffset = $('body').offset();
-            $(window).scroll(function(){
-                if($(document).scrollTop() > bodyOffset.top) {
-                    // $("header").addClass("scroll");
-                    $("header").stop().animate({
-                        "height": '60px'
-                    }, 500);
-                } else {
-                    // $("header").removeClass("scroll");
-                    $("header").stop().animate({
-                        "height": '80px'
-                    }, 500);
-                };
-            });
-
-            // web-nav
-            $(".web-nav a, h1").click(function(){
-                $(".web-nav a, h1").removeClass("on");
-                $(this).addClass("on");
-            });
-
-            // mobile-nav
-            $(".ham-wrap").click(function() {
-                $(this).toggleClass("active");
-                $(".gnb.mb").toggleClass("open");
-            });
-
-            // language
-            $(".lan-list").hide();
-
-            $(".lan-now, .lan-click").click(function(){
-                $(this).toggleClass("on");
-                $(".lan-list").slideToggle();
-            });
-
-            $(".lan-list li").click(function(){
-                $(".lan-list").slideToggle();
-                $(".lan-now").text( $(this).text().trim() );
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./js/common.js"></script>
 </head>
 
 <body>
@@ -248,7 +174,7 @@
             </div>
 
             <div class="img">
-                <!-- <img src="" alt="about-img"> -->
+                <img src="./images/about.png" alt="about-img">
             </div>
         </div>
         <!-- //ABOUT -->
@@ -259,7 +185,7 @@
             <span class="line"></span>
             <div class="flex piks">
                 <div class="img">
-                    <!-- <img src="" alt="3piks-img"> -->
+                    <img src="./images/3piks.png" alt="3piks-img">
                 </div>
                 <div class="text">
                     <h4>3PIKS</h4>
@@ -272,11 +198,11 @@
 
             <div class="flex bitbip">
                 <div class="img">
-                    <!-- <img src="" alt="bitbip-img"> -->
+                    <img src="./images/aibitbip.png" alt="bitbip-img">
                 </div>
 
                 <div class="text">
-                    <h4>AiBitBip</h4>
+                    <h4 class="text-trans" data-strid="bipTitle">AiBitBip</h4>
                     <strong class="text-trans" data-strid="bip">AI 기반 암호화폐 가격변동 서비스</strong>
                     <p class="text-trans" data-strid="bipSub">
                         AI Model이 암호화폐 매매에 도움을 줄 수 있도록 상승 또는 하락 징후를 포착하여 유저들에게 푸쉬 알림을 제공하는 서비스로 편리하고 접근성이 용이하도록 어플리케이션
@@ -286,10 +212,10 @@
 
             <div class="flex ai-bot">
                 <div class="img">
-                    <!-- <img src="" alt="aiBot-img"> -->
+                    <img src="./images/aibot.png" alt="aiBot-img">
                 </div>
                 <div class="text">
-                    <h4>AI Auto-Trading Bot</h4>
+                    <h4 class="text-trans" data-strid="botTitle">AI Auto-Trading Bot</h4>
                     <strong class="text-trans" data-strid="bot">AI Prediction Signal을 바탕으로 한<br class="mb"> Auto-Trading Bot</strong>
                     <p class="text-trans" data-strid="botSub">
                         AIBitBip의 Prediction Signal을 받아 정확한 타이밍에 암호화폐 매매를 하여 유저들이 수익을 볼 수 있도록 제공하는 서비스로 각 거래소에 제공하여 거래량과 암호화폐 유동성을 확보 할 수 있도록 Market을 형성
@@ -299,10 +225,10 @@
 
             <div class="flex prediction">
                 <div class="img">
-                    <!-- <img src="" alt="prediction-img"> -->
+                    <img src="./images/aiprediction.png" alt="prediction-img">
                 </div>
                 <div class="text">
-                    <h4>AI Prediction Platform</h4>
+                    <h4 class="text-trans" data-strid="platTitle">AI Prediction Platform</h4>
                     <strong class="text-trans" data-strid="plat">AI 연구-개발 환경 개선과 검증된 데이터확보를<br class="mb"> 해결할 수 있는 AI Prediction Platform</strong>
                     <p class="text-trans" data-strid="platSub">
                         AI 연구자들이 Open Source Library 환경에 손쉽게 접근, 이용 할 수 있도록 서비스를 제공하고 Traffic 과 Model 데이터를 확보할 수 있도록 기업에 제공하는 서비스 플랫폼
@@ -323,7 +249,8 @@
                     </p>
                 </div>
                 <div class="img">
-                    <!-- <img src="" alt="exchange-img"> -->
+                    <img src="./images/exchange_pc.png" alt="exchange-img" class="web">
+                    <img src="./images/exchange_m.png" alt="exchange-img" class="mb">
                 </div>
             </div>
         </div>
@@ -335,7 +262,8 @@
             <span class="line"></span>
 
             <div class="img">
-                <!-- <img src="" alt="eco-img"> -->
+                <img src="./images/ecosystem_pc.jpg" alt="eco-img" class="web">
+                <img src="./images/ecosystem_m.jpg" alt="eco-img" class="mb">
             </div>
         </div>
         <!-- //ECOSYSTEM -->
@@ -348,52 +276,52 @@
                 <ul class="flex">
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/nbp.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/NB.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/uzbit.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/coinbene.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/blcokinside.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/kobea.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/cardaano.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/emurgo.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/infinitowallet.png" alt="partners-logo">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <!-- <img src="" alt="partners-logo"> -->
+                            <img src="./images/alphapoint.png" alt="partners-logo">
                         </a>
                     </li>
                 </ul>
