@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -12,20 +12,53 @@
     <link rel="stylesheet" type="text/css" href="./css/common.css">
 
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/locale_lang.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            // header fixed scroll
+            applyLanguage('ko');
+
+            var arrMenuDiv;
+            // header fixed scroll , web-nav scroll
             $(window).scroll(function(){
-                $(".header").css("left", 0-$(this).scrollLeft());
+                $(".header").css("left", -$(this).scrollLeft());
+
+                var y1 = $(document).scrollTop();
+                var y2 = y1 + ($(window).height() / 2);
+
+                if(!arrMenuDiv) {
+                    arrMenuDiv = [];
+                    var children = $('.wrap').children();
+                    for(var i=2; i<children.length-1; i++) {    // header, main, footer 제외
+                        arrMenuDiv.push(children[i]);
+                    }
+                }
+
+                for(var i=0; i<arrMenuDiv.length; i++) {
+                    var el = arrMenuDiv[i];
+                    if (y1 < el.offsetTop && el.offsetTop < y2) {
+                        var id = el.id;
+                        $(".web-nav a, h1").removeClass("on");
+                        $('#menu_'+id).addClass('on');
+                        break;
+                    } else if (y1 == 0) {
+                        $(".web-nav a").removeClass("on");
+                    }
+                }
             });
 
             // header scroll size
             var bodyOffset = $('body').offset();
             $(window).scroll(function(){
-                if ($(document).scrollTop() > bodyOffset.top) {
-                    $("header").addClass("scroll");
+                if($(document).scrollTop() > bodyOffset.top) {
+                    // $("header").addClass("scroll");
+                    $("header").stop().animate({
+                        "height": '60px'
+                    }, 500);
                 } else {
-                    $("header").removeClass("scroll");
+                    // $("header").removeClass("scroll");
+                    $("header").stop().animate({
+                        "height": '80px'
+                    }, 500);
                 };
             });
 
@@ -48,6 +81,11 @@
                 $(this).toggleClass("on");
                 $(".lan-list").slideToggle();
             });
+
+            $(".lan-list li").click(function(){
+                $(".lan-list").slideToggle();
+                $(".lan-now").text( $(this).text().trim() );
+            });
         });
     </script>
 </head>
@@ -69,19 +107,19 @@
                     <nav class="web-nav">
                         <ul class="flex">
                             <li>
-                                <a href="#about">About</a>
+                                <a id="menu_about" href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#services">Service</a>
+                                <a id="menu_services" href="#services">Service</a>
                             </li>
                             <li>
-                                <a href="#exchange">Solution</a>
+                                <a id="menu_exchange" href="#exchange">Solution</a>
                             </li>
                             <li>
-                                <a href="#ecosystem">System</a>
+                                <a id="menu_ecosystem" href="#ecosystem">System</a>
                             </li>
                             <li>
-                                <a href="#partners">Partners</a>
+                                <a id="menu_partners" href="#partners">Partners</a>
                             </li>
                         </ul>
                     </nav>
@@ -89,23 +127,23 @@
                     <div class="language">
                         <ul>
                             <li class="lan-now">
-                                <a href="javascript:void(0)" class="kr">한국어</a>
+                                한국어
                             </li>
 
                             <li class="lan-list">
                                 <ul>
+                                    <!-- <li>
+                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">English</a>
+                                    </li> -->
                                     <li>
-                                        <a href="javascript:void(0)"  class="en">English</a>
+                                        <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="javascript:applyLanguage('zh');" data-lang="zh" class="zh">中文</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" class="kr on">한국어</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"  class="sc">中文</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="jp">日本語</a>
-                                    </li>
+                                        <a href="javascript:applyLanguage('jp');" data-lang="jp" class="jp">日本語</a>
+                                    </li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -126,19 +164,19 @@
                     <nav class="mb-nav">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Service</a>
+                                <a href="#services">Service</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Solution</a>
+                                <a href="#exchange">Solution</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">System</a>
+                                <a href="#ecosystem">System</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Partners</a>
+                                <a href="#partners">Partners</a>
                             </li>
                         </ul>
                     </nav>
@@ -149,18 +187,18 @@
 
                             <li class="lan-list">
                                 <ul>
+                                    <!-- <li>
+                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">English</a>
+                                    </li> -->
                                     <li>
-                                        <a href="javascript:void(0)"  class="en">English</a>
+                                        <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="javascript:applyLanguage('zh');" data-lang="zh" class="zh">中文</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" class="kr on">한국어</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"  class="sc">中文</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="jp">日本語</a>
-                                    </li>
+                                        <a href="javascript:applyLanguage('jp');" data-lang="jp" class="jp">日本語</a>
+                                    </li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -183,7 +221,7 @@
                     <br>
                     he future of artificial intelligence
                 </h3>
-                <p>
+                <p class="text-trans" data-strid="main">
                     우리는 블록체인이 오늘날의 미래라고 믿습니다.
                     <br>
                     사람과 삶을 발전시키고 보완하며 이러한 편리함이
@@ -199,7 +237,7 @@
             <div class="text">
                 <h2>About Us</h2>
                 <span class="line"></span>
-                <p>
+                <p class="text-trans" data-strid="about">
                     COSMICBC Ltd는 2018년 설립되어, 인공지능(AI) 및 블록체인(Blockchain) 연구개발을 전문으로 하는 기업입니다.
                     <br>
                     당사는 블록체인을 통해 인공지능을 활용한 미들웨어 서비스를 준비중이며, 우리의 목표는 실생활에서 AI와 블록체인 기술을 융합하여 실생활에서 사용가능한 기술을 구현하기 위해 최선을 다하고 있습니다.
@@ -222,8 +260,8 @@
                 </div>
                 <div class="text">
                     <h4>3PIKS</h4>
-                    <strong>AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼</strong>
-                    <p>
+                    <strong class="text-trans" data-strid="pik">AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼</strong>
+                    <p class="text-trans" data-strid="pikSub">
                         인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼
                     </p>
                 </div>
@@ -236,8 +274,8 @@
 
                 <div class="text">
                     <h4>AiBitBip</h4>
-                    <strong>AI 기반 암호화폐 가격변동 서비스</strong>
-                    <p>
+                    <strong class="text-trans" data-strid="bip">AI 기반 암호화폐 가격변동 서비스</strong>
+                    <p class="text-trans" data-strid="bipSub">
                         AI Model이 암호화폐 매매에 도움을 줄 수 있도록 상승 또는 하락 징후를 포착하여 유저들에게 푸쉬 알림을 제공하는 서비스로 편리하고 접근성이 용이하도록 어플리케이션
                     </p>
                 </div>
@@ -249,8 +287,8 @@
                 </div>
                 <div class="text">
                     <h4>AI Auto-Trading Bot</h4>
-                    <strong>AI Prediction Signal을 바탕으로 한<br class="mb"> Auto-Trading Bot</strong>
-                    <p>
+                    <strong class="text-trans" data-strid="bot">AI Prediction Signal을 바탕으로 한<br class="mb"> Auto-Trading Bot</strong>
+                    <p class="text-trans" data-strid="botSub">
                         AIBitBip의 Prediction Signal을 받아 정확한 타이밍에 암호화폐 매매를 하여 유저들이 수익을 볼 수 있도록 제공하는 서비스로 각 거래소에 제공하여 거래량과 암호화폐 유동성을 확보 할 수 있도록 Market을 형성
                     </p>
                 </div>
@@ -262,8 +300,8 @@
                 </div>
                 <div class="text">
                     <h4>AI Prediction Platform</h4>
-                    <strong>AI 연구-개발 환경 개선과 검증된 데이터확보를<br class="mb"> 해결할 수 있는 AI Prediction Platform</strong>
-                    <p>
+                    <strong class="text-trans" data-strid="plat">AI 연구-개발 환경 개선과 검증된 데이터확보를<br class="mb"> 해결할 수 있는 AI Prediction Platform</strong>
+                    <p class="text-trans" data-strid="platSub">
                         AI 연구자들이 Open Source Library 환경에 손쉽게 접근, 이용 할 수 있도록 서비스를 제공하고 Traffic 과 Model 데이터를 확보할 수 있도록 기업에 제공하는 서비스 플랫폼
                     </p>
                 </div>
@@ -272,29 +310,29 @@
         <!-- //SERVICES -->
 
         <!-- EXCHANGE -->
-        <div id="exchange" class="flex">
-            <div class="text">
-                <h2>Exchange Solution</h2>
-                <span class="line"></span>
-                <p>
-                    기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션
-                </p>
-            </div>
-            <div class="img">
-                <!-- <img src="" alt="exchange-img"> -->
+        <div id="exchange">
+            <div class="ex-wrap flex">
+                <div class="text">
+                    <h2>Exchange Solution</h2>
+                    <span class="line"></span>
+                    <p class="text-trans" data-strid="exchange">
+                        기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션
+                    </p>
+                </div>
+                <div class="img">
+                    <!-- <img src="" alt="exchange-img"> -->
+                </div>
             </div>
         </div>
         <!-- //EXCHANGE -->
 
         <!-- ECOSYSTEM -->
         <div id="ecosystem">
-            <div class="eco">
-                <h2>Eco System</h2>
-                <span class="line"></span>
+            <h2>Eco System</h2>
+            <span class="line"></span>
 
-                <div class="img">
-                    <!-- <img src="" alt="eco-img"> -->
-                </div>
+            <div class="img">
+                <!-- <img src="" alt="eco-img"> -->
             </div>
         </div>
         <!-- //ECOSYSTEM -->

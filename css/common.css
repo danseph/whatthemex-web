@@ -36,7 +36,7 @@ img {
 }
 
 .scroll {
-    height: 55px;
+    height: 60px;
     transition: height 0.5s;
 }
 
@@ -129,12 +129,14 @@ p {
 
 header {
     width: 1200px;
-    margin: auto;
     height: 80px;
+    margin: auto;
+    padding: 0 15px;
+    background-color: #000;
 }
 
 h1 {
-    width: 56px;
+    width: 50px;
 }
 
 .gnb {
@@ -172,6 +174,7 @@ h1 {
     margin: auto;
     line-height: 40px;
     text-align: left;
+    cursor: pointer;
     background: url(../images/cosmicbc_arrow.svg) no-repeat center right / 10px;
 }
 
@@ -186,7 +189,11 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 162px
+    /* height: 162px; */
+}
+
+.lan-list li {
+    line-height: 40px;
 }
 
 .lan-list a {
@@ -207,7 +214,7 @@ h1 {
 .main-wrap {
     width: 1200px;
     margin: auto;
-    padding: 220px 0 180px;
+    padding: 220px 10px 180px;
 }
 
 .main-wrap h2 {
@@ -226,7 +233,7 @@ h1 {
     align-items: start;
     width: 1200px;
     margin: auto;
-    padding: 210px 0 230px;
+    padding: 210px 15px 230px;
 }
 
 #about h2 {
@@ -280,45 +287,55 @@ h1 {
 
 /* EXCHANGE */
 #exchange {
-    width: 1200px;
-    margin: auto;
-    padding: 100px 0 125px;
+    background-color: #FFF;
 }
 
-#exchange .text {
+.ex-wrap {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 15px 125px;
+}
+
+.ex-wrap .text {
     width: 280px;
 }
 
-#exchange .img {
+.ex-wrap h2 {
+    color: #000;
+}
+
+.ex-wrap p {
+    color: #000;
+}
+
+.ex-wrap .line {
+    background-color: #000;
+}
+
+.ex-wrap .img {
     width: 780px;
     height: 625px;
-    background-color: #FFF;
+    background-color: #CCC;
 }
 /* //EXCHANGE */
 
 
 /* ECOSYSTEM */
-#ecosystem {
-    background-color: #FFF;
-}
-
-.eco{
+#ecosystem{
     width: 1200px;
     margin: auto;
-    padding: 75px 0 35px;
+    padding: 75px 15px 35px;
 }
 
-.eco h2 {
+#ecosystem h2 {
     text-align: center;
-    color: #000;
 }
 
-.eco .line {
+#ecosystem .line {
     margin: 35px auto 120px;
-    background-color: #000;
 }
 
-.eco .img {
+#ecosystem .img {
     height: 520px;
     background-color: #CCC;
 }
@@ -362,13 +379,13 @@ h1 {
 footer {
     width: 1200px;
     margin: auto;
-    padding: 80px 0 125px;
+    padding: 80px 15px 125px;
 }
 
 .copy {
     font-family: "Lato";
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     opacity: .4;
 }
 
@@ -639,7 +656,7 @@ footer {
     
     
     /* EXCHANGE */
-    #exchange {
+    .ex-wrap {
         position: relative;
         flex-direction: column;
         width: auto;
@@ -647,11 +664,11 @@ footer {
         padding: 70px 0 195px;
     }
 
-    #exchange .line {
+    .ex-wrap .line {
         margin: 30px auto 40px;
     }
 
-    #exchange p {
+    .ex-wrap p {
         position: absolute;
         left: 50%;
         bottom: 70px;
@@ -663,7 +680,7 @@ footer {
         letter-spacing: -0.2px;
     }
     
-    #exchange .img {
+    .ex-wrap .img {
         /* width: 270px; */
         width: 80%;
         height: 315px;
@@ -672,17 +689,17 @@ footer {
     
     
     /* ECOSYSTEM */
-    .eco{
+    #ecosystem{
         width: auto;
         min-width: 320px;
         padding: 40px 0 30px;
     }
 
-    .eco .line {
+    #ecosystem .line {
         margin: 25px auto 50px;
     }
     
-    .eco .img {
+    #ecosystem .img {
         /* width: 270px; */
         width: 80%;
         height: 520px;
