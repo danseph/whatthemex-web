@@ -4,12 +4,16 @@ var strings = {
         about: 'COSMICBC Ltd는 2018년 설립되어, 인공지능(AI) 및 블록체인(Blockchain) 연구개발을 전문으로 하는 기업입니다.<br>당사는 블록체인을 통해 인공지능을 활용한 미들웨어 서비스를 준비중이며, 우리의 목표는 실생활에서 AI와 블록체인 기술을 융합하여 실생활에서 사용가능한 기술을 구현하기 위해 최선을 다하고 있습니다.',
         pik: 'AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼',
         pikSub: '인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼',
+        bipTitle: 'AiBitBip',
         bip: 'AI 기반 암호화폐 가격변동 서비스',
         bipSub: 'AI Model이 암호화폐 매매에 도움을 줄 수 있도록 상승 또는 하락 징후를 포착하여 유저들에게 푸쉬 알림을 제공하는 서비스로 편리하고 접근성이 용이하도록 어플리케이션',
+        botTitle: 'AI Auto-Trading Bot',
         bot: 'AI Prediction Signal을 바탕으로 한<br class="mb"> Auto-Trading Bot',
         botSub: 'AIBitBip의 Prediction Signal을 받아 정확한 타이밍에 암호화폐 매매를 하여 유저들이 수익을 볼 수 있도록 제공하는 서비스로 각 거래소에 제공하여 거래량과 암호화폐 유동성을 확보 할 수 있도록 Market을 형성',
+        platTitle: 'AI Prediction Platform',
         plat: 'AI 연구-개발 환경 개선과 검증된 데이터확보를<br class="mb"> 해결할 수 있는 AI Prediction Platform',
         platSub: 'AI 연구자들이 Open Source Library 환경에 손쉽게 접근, 이용 할 수 있도록 서비스를 제공하고 Traffic 과 Model 데이터를 확보할 수 있도록 기업에 제공하는 서비스 플랫폼',
+        exTitle: 'Exchange Solution',
         exchange: '기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션'
     },
     en: {
@@ -17,12 +21,16 @@ var strings = {
         about: 'COSMICBC Ltd, founded in 2018, aims to construct an efficient and transparent ecosystem based on the convergence of AI and Blockchain.<br>We provide middleware services and solutions using AI and Blockchain technologies. We’re dedicating our resources to develop platforms for investments and businesses.',
         pik: 'Unique Rewards Platform Combining AI and Blockchain Technology',
         pikSub: 'Cryptocurrency prediction service made by AI and Human Factor (AI). The platform predicts by three zones, UP, STEADY and DOWN and gives AI Token as a reward.',
+        bipTitle: 'AiBitBip',
         bip: 'AI-Based Cryptocurrency Change Prediction Signal Service',
         bipSub: 'We developed as an application service that AI Model provides push notifications to users by capturing UP & DOWN signs. Users can use this signal for their cryptocurrency trading. This application is convenient and easy to use and access.',
+        botTitle: 'AI Auto-Trading Bot',
         bot: 'AI Prediction Signal based on Auto-Trading Bot',
         botSub: 'Users can get prediction signals from AIBitBip and trade cryptocurrency at the right time and make profits. This service provided to exchanges forms a market by securing trading volume and liquidity of cryptocurrency.',
+        platTitle: 'AI Prediction Platform',
         plat: 'AI Research - AI Prediction Platform to Improve the Development Environment and Secure Proven Data',
         platSub: 'It is a service platform that enables AI researchers to easily access and use the Open Source Library environment and provide them with traffic and model data. This platform is provided to companies.',
+        exTitle: 'Exchange Solution',
         exchange: 'This margin exchange provides the function of the existing centralized exchange`s solutions, margin and leverage trading. It also provides futures, option trading, margin futures and margin option trading.'
     },
     zh: {
@@ -39,6 +47,7 @@ var strings = {
         platTitle: 'AI预测平台',
         plat: '对于AI研发环境的改善与解决对于对于确保了已验证完毕数据的预测平台。',
         platSub: '该服务是可以提供对AI研究人员可在开源图书管理系统环境下轻松便捷地使用此平台，同时也可以把已确认的使用人数以及模型数据提供到企业。',
+        exTitle: '交易所解决方案',
         exchange: '可提供对以往的中心化交易所解决方案，可以支持保证金交易与杠杆交易加密货币保证金交易所，取货交易与期权交易，以及保证金期货交易，保证金期权交易等。'
     },
     jp: {
@@ -96,5 +105,8 @@ function applyLanguage(lang) {
         }            
         else
             $(this).removeClass('on');
+            $(".ham-wrap").removeClass("active");
+            $(".gnb.mb").removeClass("open");
+            $('html, body').css({'overflow': 'auto'});
     });
 }

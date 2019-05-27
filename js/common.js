@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    applyLanguage('ko');
+    applyLanguage('');
 
     var arrMenuDiv;
 
@@ -98,5 +98,4 @@ $(document).ready(function(){
         $(".lan-list").slideToggle();
         $(".lan-now").text( $(this).text().trim() );
     });
-
 });
