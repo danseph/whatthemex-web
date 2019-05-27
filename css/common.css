@@ -365,7 +365,7 @@ h1 {
 }
 
 .companies ul {
-    width: 885px;
+    width: 1200px;
     margin: auto;
     justify-content: unset;
     flex-wrap: wrap;
@@ -373,10 +373,10 @@ h1 {
 
 .companies li {
     display: inline-block;
-    width: 135px;
+    width: 200px;
     /* height: 60px; */
     margin-top: 35px;
-    margin-left: 35px;
+    margin-left: 80px;
     /* background-color: #FFF; */
 }
 /* //PARTNERS */
