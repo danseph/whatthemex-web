@@ -17,38 +17,38 @@ var strings = {
         exchange: '기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션'
     },
     en: {
-        main: 'The future of Blockchain is now dedicated to working towards bringing a better world for generations to come.<br>We believe Blockchain technology can positively impact humankind and make life easier. We look forward to walking along the exciting road ahead of us.',
-        about: 'COSMICBC Ltd, founded in 2018, aims to construct an efficient and transparent ecosystem based on the convergence of AI and Blockchain.<br>We provide middleware services and solutions using AI and Blockchain technologies. We’re dedicating our resources to develop platforms for investments and businesses.',
+        main: 'The future of Blockchain is now dedicated to working towards bringing a better world for generations to come.<br>We believe Blockchain technology can positively impact humankind and make life easier.<br>We look forward to walking along the exciting road ahead of us.',
+        about: 'COSMICBC Ltd, founded in 2018, aims to construct an efficient and transparent ecosystem based on the convergence of AI and Blockchain.<br>We provide middleware services and solutions using AI and Blockchain technologies.<br>We’re dedicating our resources to develop platforms for investments and businesses.',
         pik: 'Unique Rewards Platform Combining AI and Blockchain Technology',
-        pikSub: 'Cryptocurrency prediction service made by AI and Human Factor (AI). The platform predicts by three zones, UP, STEADY and DOWN and gives AI Token as a reward.',
+        pikSub: 'Cryptocurrency prediction service made by AI and Human Factor (AI).<br>The platform predicts by three zones, UP, STEADY and DOWN and gives AI Token as a reward.',
         bipTitle: 'AiBitBip',
         bip: 'AI-Based Cryptocurrency Change Prediction Signal Service',
-        bipSub: 'We developed as an application service that AI Model provides push notifications to users by capturing UP & DOWN signs. Users can use this signal for their cryptocurrency trading. This application is convenient and easy to use and access.',
+        bipSub: 'We developed as an application service that AI Model provides push notifications to users by capturing UP & DOWN signs.<br>Users can use this signal for their cryptocurrency trading. This application is convenient and easy to use and access.',
         botTitle: 'AI Auto-Trading Bot',
         bot: 'AI Prediction Signal based on Auto-Trading Bot',
-        botSub: 'Users can get prediction signals from AIBitBip and trade cryptocurrency at the right time and make profits. This service provided to exchanges forms a market by securing trading volume and liquidity of cryptocurrency.',
+        botSub: 'Users can get prediction signals from AIBitBip and trade cryptocurrency at the right time and make profits.<br>This service provided to exchanges forms a market by securing trading volume and liquidity of cryptocurrency.',
         platTitle: 'AI Prediction Platform',
         plat: 'AI Research - AI Prediction Platform to Improve the Development Environment and Secure Proven Data',
         platSub: 'It is a service platform that enables AI researchers to easily access and use the Open Source Library environment and provide them with traffic and model data. This platform is provided to companies.',
         exTitle: 'Exchange Solution',
-        exchange: 'This margin exchange provides the function of the existing centralized exchange`s solutions, margin and leverage trading. It also provides futures, option trading, margin futures and margin option trading.'
+        exchange: 'This margin exchange provides the function of the existing centralized exchange`s solutions, margin and leverage trading.<br>It also provides futures, option trading, margin futures and margin option trading.'
     },
     zh: {
         main: '今天，我们已然能够体验区块链的未来。<br>我们坚信，它能够提升人与生活的质量，从而减去诸多的不方便，并以此创造出更加舒适的体验，将其融入到我们的生活当中。',
-        about: 'COSMICBC Ltd创立于2018年，以专门研发人工智能(AI)与区块链(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务与其解决方案作为运营的主方向，并且针对于投资或商务平台中所适用的产品进行开发。',
-        pik: '赋予了独创性，并将把人工智能与区块链技术相结合的一项奖励平台。',
-        pikSub: '是以人工智能与人为因素（Human Factor）相结合的加密货币价格预测的一项服务。而且，该平台是通过AI模型对加密货币价格的上升、无趋势、下降等三个区域进行预测，并以AI Token作为奖励而提供服务。',
-        bipTitle: 'AI比特蜂',
-        bip: '以人工智能为基础，对加密货币的价格变动发送预测信号的一项服务。',
-        bipSub: '该服务是由AI模型帮助加密货币交易中获得参考，提前对价格的上升或下降进行预测，并将对此相关信息发送至用户的一项服务。为了能够使用户能够方便地使用该服务，我们将以手机软件的形式来进行开发。',
-        botTitle: 'AI自动交易模型',
+        about: 'COSMICBC Ltd创立于2018年, 专门研发人工智能(AI)与区块链(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务与其解决方案作为运营的主方向, 并且针对于投资或商务平台中所适用的产品进行开发。',
+        pik: '它被赋予了独创性,<br>是人工智能与区块链技术相结合的一项奖励平台。',
+        pikSub: '是以人工智能与人为因素(Human Factor)相结合, 对加密货币价格进行预测 的一项服务。<br>而且,该平台是通过AI模型对加密货币价格的上升、无趋势、下降等 三个区域进行预测,并以AI Token作为奖励而提供服务。',
+        bipTitle: 'AI比特蜂(AiBitBip)',
+        bip: '以人工智能为基础, 对加密货币的价格变动发送预测信号的一项服务。',
+        bipSub: '该服务是由AI模型帮助加密货币交易中获得参考, 提前对价格的上升或下降进行预测, 并将对此相关信息发送至用户的一项服务。<br>为了能够使用户能够方便地 使用该服务,我们将以手机软件的形式来进行开发。',
+        botTitle: 'AI自动交易模型<br>(AI Auto-Trading Bot)',
         bot: '通过AI所提供的预测信号为基础的AI自动交易模型。',
-        botSub: 'AI比特蜂（AIBitBip）是通过接收预测信号后，为了能够使以加密货币交易来获取收益的用户在准确的时间点能够收到讯息通知的一项服务。不仅如此，我们希望通过该服务能够确保过对加密货币流动性，并以此来形成相关市场规模。',
-        platTitle: 'AI预测平台',
-        plat: '对于AI研发环境的改善与解决对于对于确保了已验证完毕数据的预测平台。',
-        platSub: '该服务是可以提供对AI研究人员可在开源图书管理系统环境下轻松便捷地使用此平台，同时也可以把已确认的使用人数以及模型数据提供到企业。',
-        exTitle: '交易所解决方案',
-        exchange: '可提供对以往的中心化交易所解决方案，可以支持保证金交易与杠杆交易加密货币保证金交易所，取货交易与期权交易，以及保证金期货交易，保证金期权交易等。'
+        botSub: 'AI比特蜂(AIBitBip)是通过接收预测信号后, 为了能够使以加密货币交<br>易来获取收益的用户在准确的时间点能够收到讯息通知的一项服务。<br>不仅如此, 我们希望通过该服务能够确保过对加密货币流动性,<br>并以此来形成相关市场规模。',
+        platTitle: 'AI预测平台<br>(AI Prediction Platform)',
+        plat: '对AI研发环境进行改善，<br>可确保已验证完毕的数据进行确认的一项预测平台。',
+        platSub: '该服务是可以提供对AI研究人员可在开源图书管理系统环境下轻松便捷<br>地使用此平台。<br>同时, 也可以把已确认的使用人数以及模型数据提供到企业。',
+        exTitle: '交易所<br class="web">解决方案',
+        exchange: '我们可以对以往的中心化交易所提供解决方案。<br>我公司可以支持保证金交易与杠杆交易的加密货币保证<br class="web">金交易所。<br>还可提供期货交易, 期权交易, 保证金期货交易, 以及保证金期权交易等相关服务。'
     },
     jp: {
         main: '',
@@ -64,6 +64,21 @@ var strings = {
         exchange: ''
     }
 };
+
+var css = {
+    ko: {
+        css:'./css/common.css'
+    },
+    en: {
+        css:'./css/common_en.css'
+    },
+    zh: {
+        css:'./css/common_zh.css'
+    },
+    jp: {
+        css:''
+    }
+}
   
 function getLanguage() {
     var lang = navigator.language || navigator.userLanguage;
@@ -96,6 +111,7 @@ function applyLanguage(lang) {
         if(strPack[strid]) {
             $(this).html(strPack[strid]);
         }
+        
     });
 
     $('.lan-list a').each(function(){
