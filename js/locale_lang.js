@@ -35,18 +35,18 @@ var strings = {
     },
     zh: {
         main: '今天，我们已然能够体验区块链的未来。<br>我们坚信，它能够提升人与生活的质量，从而减去诸多的不方便，并以此创造出更加舒适的体验，将其融入到我们的生活当中。',
-        about: 'COSMICBC Ltd创立于2018年, 专门研发人工智能(AI)与区块链(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务与其解决方案作为运营的主方向, 并且针对于投资或商务平台中所适用的产品进行开发。',
+        about: 'COSMICBC Ltd创立于2018年, 专门研发人工智能(AI)与区块链<br>(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务<br>与其解决方案作为运营的主方向, 并且针对于<br>投资或商务平台中所适用的产品进行开发。',
         pik: '它被赋予了独创性,<br>是人工智能与区块链技术相结合的一项奖励平台。',
-        pikSub: '是以人工智能与人为因素(Human Factor)相结合, 对加密货币价格进行预测 的一项服务。<br>而且,该平台是通过AI模型对加密货币价格的上升、无趋势、下降等 三个区域进行预测,并以AI Token作为奖励而提供服务。',
+        pikSub: '是以人工智能与人为因素(Human Factor)相结合, <br class="mb">对加密货币价格进行预测的一项服务。<br>而且,该平台是通过AI模型对加密货币价格的上升、无趋势、下降等 <br class="mb">三个区域进行预测,并以AI Token作为奖励而提供服务。',
         bipTitle: 'AI比特蜂(AiBitBip)',
         bip: '以人工智能为基础, 对加密货币的价格变动发送预测信号的一项服务。',
         bipSub: '该服务是由AI模型帮助加密货币交易中获得参考, 提前对价格的上升或下降进行预测, 并将对此相关信息发送至用户的一项服务。<br>为了能够使用户能够方便地 使用该服务,我们将以手机软件的形式来进行开发。',
         botTitle: 'AI自动交易模型<br>(AI Auto-Trading Bot)',
         bot: '通过AI所提供的预测信号为基础的AI自动交易模型。',
-        botSub: 'AI比特蜂(AIBitBip)是通过接收预测信号后, 为了能够使以加密货币交<br>易来获取收益的用户在准确的时间点能够收到讯息通知的一项服务。<br>不仅如此, 我们希望通过该服务能够确保过对加密货币流动性,<br>并以此来形成相关市场规模。',
+        botSub: 'AI比特蜂(AIBitBip)是通过接收预测信号后, <br class="mb">为了能够使以加密货币交易来获取<br>收益的用户在准确的时间点能够收到讯息通知的一项服务。<br>不仅如此, 我们希望通过该服务能够确保过对加密货币流动性,<br>并以此来形成相关市场规模。',
         platTitle: 'AI预测平台<br>(AI Prediction Platform)',
         plat: '对AI研发环境进行改善，<br>可确保已验证完毕的数据进行确认的一项预测平台。',
-        platSub: '该服务是可以提供对AI研究人员可在开源图书管理系统环境下轻松便捷<br>地使用此平台。<br>同时, 也可以把已确认的使用人数以及模型数据提供到企业。',
+        platSub: '该服务是可以提供对AI研究人员可在开源图书管理系统环境下<br>轻松便捷地使用此平台。<br>同时, 也可以把已确认的使用人数以及模型数据提供到企业。',
         exTitle: '交易所<br class="web">解决方案',
         exchange: '我们可以对以往的中心化交易所提供解决方案。<br>我公司可以支持保证金交易与杠杆交易的加密货币保证<br class="web">金交易所。<br>还可提供期货交易, 期权交易, 保证金期货交易, 以及保证金期权交易等相关服务。'
     },
@@ -65,19 +65,11 @@ var strings = {
     }
 };
 
-var css = {
-    ko: {
-        css:'./css/common.css'
-    },
-    en: {
-        css:'./css/common_en.css'
-    },
-    zh: {
-        css:'./css/common_zh.css'
-    },
-    jp: {
-        css:''
-    }
+var cssPack = {
+    ko: './css/common.css',
+    en: './css/common_en.css',
+    zh: './css/common_zh.css',
+    jp: ''
 }
   
 function getLanguage() {
@@ -100,6 +92,14 @@ function applyLanguage(lang) {
         localStorage.setItem("LANG", lang);
     }
 
+    // CSS 변경
+    var cssLink = cssPack[lang];
+    if(!cssLink) {
+        cssLink = cssPack.en;
+    }
+    $('link').eq(4).attr('href', cssLink);
+
+    // 언어팩 변경
     var strPack = strings[lang];
     if(!strPack) {
         lang = 'en';

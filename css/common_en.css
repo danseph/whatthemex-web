@@ -1,0 +1,808 @@
+/* ------------------------------------------------------
+
+
+    Common 공통
+             
+
+------------------------------------------------------ */
+body, div, h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
+    color: #FFF;
+    /* word-wrap: break-word; */
+    word-break: keep-all;
+}
+
+a {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrap {
+    min-width: 1200px;
+    background-color: #000;
+    font-family: "Lato", "arial", "sans-serif";
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.flex {
+    display: flex;
+    display: -ms- flex;
+    display: -moz- flex;
+    display: -webkit- flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll {
+    height: 60px;
+    transition: height 0.5s;
+}
+
+
+.en {
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.kr {
+    font-family: "Spoqa Han Sans";
+    font-weight: 400;
+}
+
+.zh {
+    font-family: "Noto Sans SC";
+    font-weight: 400;
+}
+
+.jp {
+    font-family: "Spoqa Han Sans JP";
+    font-weight: 400;
+}
+
+.line {
+    display: block;
+    width: 80px;
+    height: 1px;
+    margin: 60px 0 45px;
+    background-color: #FFF;
+    /* border: solid 2px #FFF; */
+}
+
+.text {
+    width: 380px;
+}
+
+.bg-black {
+    background-color: #000;
+    transition: background-color 1s;
+}
+
+
+
+/* ------------------------------------------------------
+
+
+    Web 웹
+             
+
+------------------------------------------------------ */
+h2 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 3.2rem;   
+}
+
+h4 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+strong {
+    display: block;
+    margin: 25px 0;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2.3;
+}
+
+.mb {
+    display: none;
+}
+
+
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header {
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+h1 {
+    width: 40px;
+}
+
+.gnb {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.web-nav ul li {
+    width: 80px;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+.web-nav a {
+    color: #A9A9A9
+}
+
+.web-nav a:hover {
+    color: #FFF;
+}
+
+.web-nav a.on {
+    color: #FFF;
+}
+
+.language {
+    position: relative;
+    width: 80px;
+}
+
+.lan-now {
+    width: 54px;
+    margin: auto;
+    line-height: 40px;
+    text-align: left;
+    cursor: pointer;
+    background: url(../images/cosmicbc_arrow.svg) no-repeat center right / 10px;
+}
+
+.lan-now.on {
+    background: url(../images/cosmicbc_arrow2.svg) no-repeat center right / 10px;
+}
+
+.lan-list {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #3C3C3C;
+    background-color: #000;
+}
+
+.lan-list ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* height: 162px; */
+}
+
+.lan-list li {
+    line-height: 40px;
+}
+
+.lan-list a {
+    color: #A9A9A9;
+}
+
+.lan-list a.on {
+    color: #FFF;
+}
+
+.lan-list a:hover {
+    color: #FFF;
+}
+/* //HEADER */
+
+
+/* MAIN */
+#main {
+    background: url(../images/main.png) no-repeat center center / 100%;
+}
+
+.main-wrap {
+    width: 1200px;
+    margin: auto;
+    padding: 220px 10px 180px;
+}
+
+.main-wrap h2 {
+    width: 315px;
+    margin-bottom:50px;
+}
+
+.main-wrap p {
+    margin-top: 35px;
+    color: #CCC;
+}
+/* //MAIN */
+
+
+/* ABOUT */
+#about {
+    align-items: start;
+    width: 1200px;
+    margin: auto;
+    padding: 160px 15px 230px;
+}
+
+#about h2 {
+    margin-top: 20px; 
+}
+
+#about p {
+    color: #CCC;
+}
+
+#about .img {
+    width: 680px;
+    height: 415px;
+}
+/* //ABOUT */
+
+
+/* SERVICES */
+#services {
+    width: 1200px;
+    margin: auto;
+    padding: 25px 100px 160px;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#services .line {
+    margin: 50px auto 120px;
+}
+
+#services p {
+    color: #676767;
+}
+
+#services .img {
+    width: 480px;
+    height: 175px;
+}
+
+.piks {
+    height: 240px;
+}
+
+.bitbip {
+    flex-direction: row-reverse;
+    height: 266px;
+    margin: 120px 0;
+}
+
+.ai-bot {
+    height: 250px;
+}
+
+.prediction {
+    flex-direction: row-reverse;
+    height: 245px;
+    margin-top: 120px;
+}
+/* //SERVICES */
+
+
+/* EXCHANGE */
+#exchange {
+    background-color: #FFF;
+}
+
+.ex-wrap {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 15px 125px;
+}
+
+.ex-wrap .text {
+    width: 280px;
+}
+
+.ex-wrap h2 {
+    height: 150px;
+    color: #000;
+}
+
+.ex-wrap p {
+    color: #000;
+}
+
+.ex-wrap .line {
+    background-color: #000;
+}
+
+.ex-wrap .img {
+    width: 780px;
+    height: 625px;
+}
+/* //EXCHANGE */
+
+
+/* ECOSYSTEM */
+#ecosystem{
+    padding: 160px 15px 60px;
+}
+
+#ecosystem h2 {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+#ecosystem .line {
+    margin: 35px auto 120px;
+}
+
+#ecosystem .img {
+    min-width: 1200px;
+}
+/* //ECOSYSTEM */
+
+
+/* PARTNERS */
+#partners {
+    width: 1200px;
+    margin: auto;
+    padding: 110px 0 80px;
+}
+
+#partners h2 {
+    text-align: center;
+}
+
+#partners .line {
+    margin: 35px auto 70px;
+}
+
+.companies ul {
+    width: 1200px;
+    margin: auto;
+    justify-content: unset;
+    flex-wrap: wrap;
+}
+
+.companies li {
+    display: inline-block;
+    width: 200px;
+    /* height: 60px; */
+    margin-top: 35px;
+    margin-left: 80px;
+    /* background-color: #FFF; */
+}
+/* //PARTNERS */
+
+
+/* FOOTER */
+footer {
+    width: 1200px;
+    margin: auto;
+    padding: 80px 15px 125px;
+}
+
+.copy {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.4rem;
+    opacity: .4;
+}
+
+.sns {
+    width: 220px;
+}
+
+.sns ul li {
+    width: 20px;
+    opacity: .4;
+}
+
+.sns ul li:hover {
+    opacity: 1;
+}
+/* //FOOTER */
+
+
+/* ------------------------------------------------------
+
+
+    Mobile 모바일
+             
+
+------------------------------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .wrap {
+        min-width: 320px;
+    }
+
+    .line {
+        width: 50px;
+    }
+
+    .text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;   
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+    
+    strong {
+        margin: 15px 0;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        /* letter-spacing: -0.2px; */
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mb {
+        display: block;
+    }
+    
+    
+    /* HEADER */
+    header {
+        width: auto;
+        min-width: 320px;
+        height: 52px;
+        padding: 0 18px;
+    }
+    
+    h1 {
+        width: 32px;
+    }
+
+    .ham-wrap {
+        position: relative;
+        flex-direction: column;
+        width: 22px;
+        height: 16px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .ham-wrap span{
+        width: 22px;
+        height: 2px;
+        background-color: #FFF;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .ham-wrap.active {
+        margin-right: 18px;
+    }
+
+    .ham-wrap.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .ham-wrap.active span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .ham-wrap.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .gnb {
+        /* display: none; */
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #000;
+        
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+    }
+
+    .gnb.open {
+        opacity: 0.99;
+        visibility: visible;
+        overflow-y: scroll;
+    }
+    
+
+    .mb-nav{
+        padding: 75px 0 0;
+    }
+
+    .mb-nav li {
+        margin-bottom: 30px;
+    }
+
+    .mb-nav li a {
+        line-height: 1.35;
+        font-size: 2.6rem;
+        color: #FFF;
+    }
+    
+    .language {
+        width: auto;
+    }
+    
+    .lan-click {
+        line-height: 1.35;
+        font-size: 2.6rem;
+        color: #FFF;
+    }
+    
+    .lan-list {
+        position: static;
+        margin-top: 25px;
+        border: 0;
+    }
+    
+    .lan-list li {
+        line-height: 28px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .lan-list ul {
+        height: auto;
+    }
+
+    .lan-list a {
+        display: block;
+    }
+    /* //HEADER */
+    
+    
+    /* MAIN */
+    #main {
+        background: url(../images/main_m.png) no-repeat center center / 100%;
+    }
+
+    .main-wrap {
+        width: auto;
+        min-width: 320px;
+        padding: 185px 5% 75px;
+        text-align: center;
+    }
+
+    .main-wrap h2 {
+        /* width: 180px; */
+        width: 55%;
+        margin: 0 auto 185px;
+    }
+
+    .main-wrap p {
+        margin-top: 15px;
+        line-height: 2.3;
+    }
+    /* //MAIN */
+    
+    
+    /* ABOUT */
+    #about {
+        flex-direction: column-reverse;
+        width: auto;
+        min-width: 320px;
+        padding: 115px 0;
+    }
+
+    #about .line {
+        margin: 30px auto 25px;
+    }
+
+    #about p {
+        line-height: 2.2;
+    }
+    
+    #about .img {
+        /* width: 250px; */
+        width: 75%;
+        height: auto;
+        margin: 0 auto 30px;
+    }
+    /* //ABOUT */
+    
+    
+    /* SERVICES */
+    #services {
+        width: auto;
+        min-width: 320px;
+        padding: 75px 18px 80px;
+    }
+
+    #services .line {
+        margin: 30px auto 35px;
+    }
+    
+    #services .text {
+        margin-top: 20px;
+    }
+    
+    #services .img {
+        /* width: 285px; */
+        width: 88%;
+        height: auto;
+        margin: auto;
+    }
+
+    .piks{
+        display: block;
+        height: auto;
+    }
+    
+    .bitbip {
+        display: block;
+        height: auto;
+        margin: 60px 0;
+    }
+
+    .ai-bot {
+        display: block;
+        height: auto;
+    }
+    
+    .prediction {
+        display: block;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    /* //SERVICES */
+    
+    
+    /* EXCHANGE */
+    .ex-wrap {
+        position: relative;
+        flex-direction: column;
+        width: auto;
+        min-width: 320px;
+        padding: 70px 0 195px;
+    }
+
+    .ex-wrap h2 {
+        height: auto;
+    }
+
+    .ex-wrap .line {
+        margin: 30px auto 40px;
+    }
+
+    .ex-wrap p {
+        position: absolute;
+        left: 50%;
+        bottom: 70px;
+        /* width: 250px; */
+        width: 80%;
+        /* margin-left: -125px; */
+        margin-left: -40%;
+        line-height: 2.2;
+        letter-spacing: -0.2px;
+    }
+    
+    .ex-wrap .img {
+        /* width: 270px; */
+        width: 80%;
+        height: auto;
+    }
+    /* //EXCHANGE */
+    
+    
+    /* ECOSYSTEM */
+    #ecosystem{
+        width: auto;
+        min-width: 320px;
+        padding: 80px 0 30px;
+    }
+
+    #ecosystem h2 {
+        width: 100%;
+    }
+
+    #ecosystem .line {
+        margin: 25px auto 50px;
+    }
+    
+    #ecosystem .img {
+        /* width: 270px; */
+        width: 80%;
+        min-width: auto;
+        height: auto;
+        margin: auto;
+    }
+    /* //ECOSYSTEM */
+    
+    
+    /* PARTNERS */
+    #partners {
+        width: auto;
+        min-width: 320px;
+        padding: 60px 0 20px;
+    }
+
+    #partners .line {
+        margin: 30px auto 60px;
+    }
+    
+    .companies ul {
+        /* width: 220px; */
+        width: 75%;
+    }
+    
+    .companies li {
+        /* width: 100px; */
+        width: 25%;
+        margin-top: 15px;
+        margin-left: 17%;
+    }
+    /* //PARTNERS */
+    
+    
+    /* FOOTER */
+    footer {
+        flex-direction: column-reverse;
+        width: auto;
+        min-width: 320px;
+        padding: 60px 0 70px;
+    }
+    
+    .copy {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+    
+    .sns {
+        margin-bottom: 35px;
+        padding: 0 30px;
+    }
+    
+    .sns ul li {
+        width: 12%;
+    }
+    
+    /* //FOOTER */
+    
+
+}
