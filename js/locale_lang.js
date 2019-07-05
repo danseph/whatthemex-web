@@ -1,7 +1,7 @@
 var strings = {
     ko: {
         main: '우리는 블록체인이 오늘날의 미래라고 믿습니다.<br>사람과 삶을 발전시키고 보완하며 이러한 편리함이<br>우리 삶에 안착할 수 있도록 합니다.',
-        about: 'COSMICBC Ltd는 2018년 설립되어, 인공지능(AI) 및 블록체인(Blockchain) 연구개발을 전문으로 하는 기업입니다.<br>당사는 블록체인을 통해 인공지능을 활용한 미들웨어 서비스를 준비중이며, 우리의 목표는 실생활에서 AI와 블록체인 기술을 융합하여 실생활에서 사용가능한 기술을 구현하기 위해 최선을 다하고 있습니다.',
+        about: 'COSMICBC Pte., Ltd는 2018년 설립되어, 인공지능(AI) 및 블록체인(Blockchain) 연구개발을 전문으로 하는 기업입니다.<br>당사는 블록체인을 통해 인공지능을 활용한 미들웨어 서비스를 준비중이며, 우리의 목표는 실생활에서 AI와 블록체인 기술을 융합하여 실생활에서 사용가능한 기술을 구현하기 위해 최선을 다하고 있습니다.',
         pik: 'AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼',
         pikSub: '인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼',
         bipTitle: 'AIBitBip',
@@ -18,7 +18,7 @@ var strings = {
     },
     en: {
         main: 'The future of Blockchain is now dedicated to working towards bringing a better world for generations to come.<br>We believe Blockchain technology can positively impact humankind and make life easier.<br>We look forward to walking along the exciting road ahead of us.',
-        about: 'COSMICBC Ltd, founded in 2018, aims to construct an efficient and transparent ecosystem based on the convergence of AI and Blockchain.<br>We provide middleware services and solutions using AI and Blockchain technologies.<br>We’re dedicating our resources to develop platforms for investments and businesses.',
+        about: 'COSMICBC Pte., Ltd, founded in 2018, aims to construct an efficient and transparent ecosystem based on the convergence of AI and Blockchain.<br>We provide middleware services and solutions using AI and Blockchain technologies.<br>We’re dedicating our resources to develop platforms for investments and businesses.',
         pik: 'Unique Rewards Platform Combining AI and Blockchain Technology',
         pikSub: 'Cryptocurrency prediction service made by AI and Human Factor (AI).<br>The platform predicts by three zones, UP, STEADY and DOWN and gives AI Token as a reward.',
         bipTitle: 'AIBitBip',
@@ -35,7 +35,7 @@ var strings = {
     },
     zh: {
         main: '今天，我们已然能够体验区块链的未来。<br>我们坚信，它能够提升人与生活的质量，从而减去诸多的不方便，并以此创造出更加舒适的体验，将其融入到我们的生活当中。',
-        about: 'COSMICBC Ltd创立于2018年, 专门研发人工智能(AI)与区块链<br>(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务<br>与其解决方案作为运营的主方向, 并且针对于<br>投资或商务平台中所适用的产品进行开发。',
+        about: 'COSMICBC Pte., Ltd创立于2018年, 专门研发人工智能(AI)与区块链<br>(Blockchain)为主的一家公司。<br>我公司以人工智能与区块链相结合的中间件服务<br>与其解决方案作为运营的主方向, 并且针对于<br>投资或商务平台中所适用的产品进行开发。',
         pik: '它被赋予了独创性,<br>是人工智能与区块链技术相结合的一项奖励平台。',
         pikSub: '是以人工智能与人为因素(Human Factor)相结合, <br class="mb">对加密货币价格进行预测的一项服务。<br>而且,该平台是通过AI模型对加密货币价格的上升、无趋势、下降等 <br class="mb">三个区域进行预测,并以AI Token作为奖励而提供服务。',
         bipTitle: 'AI比特蜂(AIBitBip)',
