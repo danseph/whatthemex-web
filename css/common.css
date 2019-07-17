@@ -387,7 +387,8 @@ h1 {
 .companies ul {
     width: 1200px;
     margin: auto;
-    justify-content: unset;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -396,7 +397,7 @@ h1 {
     width: 200px;
     /* height: 60px; */
     margin-top: 35px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     /* background-color: #FFF; */
 }
 /* //PARTNERS */
@@ -781,7 +782,7 @@ footer {
         /* width: 100px; */
         width: 25%;
         margin-top: 15px;
-        margin-left: 17%;
+        /* margin-left: 17%; */
     }
     /* //PARTNERS */
     
