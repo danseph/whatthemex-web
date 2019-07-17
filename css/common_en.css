@@ -368,24 +368,25 @@ h1 {
 
 
 /* PARTNERS */
-#partners {
+.partners {
     width: 1200px;
     margin: auto;
     padding: 110px 0 80px;
 }
 
-#partners h2 {
+.partners h2 {
     text-align: center;
 }
 
-#partners .line {
+.partners .line {
     margin: 35px auto 70px;
 }
 
 .companies ul {
     width: 1200px;
     margin: auto;
-    justify-content: unset;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
