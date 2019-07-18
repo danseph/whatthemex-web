@@ -369,7 +369,6 @@ h1 {
 }
 /* //ECOSYSTEM */
 
-
 /* PARTNERS */
 #partners {
     width: 1200px;
@@ -402,6 +401,22 @@ h1 {
     /* background-color: #FFF; */
 }
 /* //PARTNERS */
+
+/* LSTIGING PARTNERS */
+#listingPartners {
+    width: 1200px;
+    margin: auto;
+    padding: 110px 0 80px;
+}
+
+#listingPartners h2 {
+    text-align: center;
+}
+
+#listingPartners .line {
+    margin: 35px auto 70px;
+}
+/* LSTIGING PARTNERS */
 
 
 /* FOOTER */
@@ -782,8 +797,19 @@ footer {
         margin-left: 17%;
     }
     /* //PARTNERS */
-    
-    
+
+    /* LISTING PARTNERS */
+    #listingPartners {
+        width: auto;
+        min-width: 320px;
+        padding: 60px 0 20px;
+    }
+
+    #listingPartners .line {
+        margin: 30px auto 60px;
+    }
+    /* LISTING PARTNERS */
+
     /* FOOTER */
     footer {
         flex-direction: column-reverse;
