@@ -371,17 +371,17 @@ h1 {
 
 
 /* PARTNERS */
-#partners {
+.partners {
     width: 1200px;
     margin: auto;
     padding: 110px 0 80px;
 }
 
-#partners h2 {
+.partners h2 {
     text-align: center;
 }
 
-#partners .line {
+.partners .line {
     margin: 35px auto 70px;
 }
 
