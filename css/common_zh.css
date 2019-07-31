@@ -426,10 +426,18 @@ footer {
     padding: 80px 15px 125px;
 }
 
-.copy {
+
+.address {
     font-family: "Lato";
     font-weight: 400;
     font-size: 1.4rem;
+    opacity: .4;
+}
+
+.copy {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 0.9rem;
     opacity: .4;
 }
 
@@ -817,10 +825,15 @@ footer {
         min-width: 320px;
         padding: 60px 0 70px;
     }
+
+    .address {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
     
     .copy {
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: 0.4rem;
     }
     
     .sns {
