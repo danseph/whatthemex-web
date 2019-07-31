@@ -28,7 +28,7 @@ var strings = {
         bot: 'Powerful Auto-Trading Bot Empowered with Superior Execution and Liquidity',
         botSub: 'Through prediction signals from AIBitBip, our sophisticated auto-trading bot profits our users by capturing the perfect window of opportunity for their cryptocurrency trades.<br>Provided also to exchanges, this service forms a market by securing the volume and liquidity of cryptocurrency.',
         platTitle: 'AI Prediction Platform',
-        plat: 'Developing the AI Environment <br>and Securing Proven Data ',
+        plat: 'Developing the AI Environment and Securing Proven Data ',
         platSub: 'A service platform that enables AI researchers to easily access and use the Open Source Library environment consisting of traffic and model data. Providing the human resources and environment needed for AI development, the platform also secures proven data of AI developers and researchers.',
         exTitle: 'Exchange Solution',
         exchange: 'An exchange providing the basic functions of deposit and withdrawal through a multi-signature wallet, much like existing centralized exchanges. The exchange also provides solutions that enable its users to undertake perpetual future trading and option trading.'
