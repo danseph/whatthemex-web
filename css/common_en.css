@@ -425,7 +425,6 @@ footer {
     padding: 80px 15px 125px;
 }
 
-
 .address {
     font-family: "Lato";
     font-weight: 400;
@@ -436,8 +435,14 @@ footer {
 .copy {
     font-family: "Lato";
     font-weight: 400;
-    font-size: 0.9rem;
-    opacity: .4;
+    font-size: 1.1rem;
+    margin-top:0.5rem;
+    /* opacity: .8; */
+}
+
+.icon {
+    width:1.4rem; 
+    margin-right: 1.2rem;
 }
 
 .sns {
@@ -828,15 +833,23 @@ footer {
     .address {
         font-weight: 300;
         font-size: 0.8rem;
+        text-align: center;
     }
     
+    .icon {
+        width:1.0rem; 
+        margin-right:1.0rem;
+    }
+
     .copy {
         font-weight: 300;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
+        text-align: center;
+        margin-top: 1rem
     }
     
     .sns {
-        margin-bottom: 35px;
+        margin-bottom: 50px;
         padding: 0 30px;
     }
     
