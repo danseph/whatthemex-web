@@ -18,7 +18,7 @@ var strings = {
     },
     en: {
         main: 'We see a future where blockchain technology will positively impact humankind and make life easier for future generations.<br>Through the convergence of AI and blockchain, we dedicate technology to bringing a better world for us all.',
-        about: 'Founded in 2018, COSMICBC constructs efficient and transparent ecosystems based on the convergence of AI and Blockchain. Based in Singapore, we provide various / veriety of services and solutions using AI and Blockchain technologies, dedicating our resources to develop platforms for investments and businesses.',
+        about: 'Founded in 2018, COSMICBC constructs efficient and transparent ecosystems based on the convergence of AI and Blockchain. Based in Singapore, we provide various of services and solutions using AI and Blockchain technologies, dedicating our resources to develop platforms for investments and businesses.',
         pik: 'Unique Rewards Platform Combining AI and Blockchain Technology',
         pikSub: 'A cryptocurrency prediction service made possible through  the <br>integration of AI and Human Factor (AI).<br>Predicting using the zones, UP, STEADY, and DOWN, the platform <br>gives AI Token as a reward for correct predictions.',
         bipTitle: 'AIBitBip',
