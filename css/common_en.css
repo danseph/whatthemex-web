@@ -22,7 +22,7 @@ img {
 
 .wrap {
     min-width: 1200px;
-    background-color: #000;
+    background-color: #191919;
     font-family: "Lato", "arial", "sans-serif";
     font-size: 10px;
     font-weight: normal;
@@ -34,7 +34,8 @@ img {
     display: -moz- flex;
     display: -webkit- flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
 }
 
 .scroll {
@@ -65,19 +66,22 @@ img {
 
 .line {
     display: block;
-    width: 80px;
-    height: 1px;
-    margin: 60px 0 45px;
-    background-color: #FFF;
-    /* border: solid 2px #FFF; */
+    width: 100px;
+    height: 2px;
+    background-image: linear-gradient(to left, rgba(17, 218, 251, 0), #11dafb 52%, rgba(17, 218, 251, 0) 100%);
+    margin: 0;
 }
 
 .text {
-    width: 380px;
+    width: 550px;
 }
 
+/* .way-box{
+    margin: 5px 10px;
+} */
+
 .bg-black {
-    background-color: #000;
+    background-color: #191919;
     transition: background-color 1s;
 }
 
@@ -91,9 +95,18 @@ img {
 
 ------------------------------------------------------ */
 h2 {
-    font-family: "Lato";
-    font-weight: 700;
-    font-size: 5rem;
+    /* width: 437px;
+    height: 56px; */
+    transform: rotate(-360deg);
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.81;
+    letter-spacing: 0.29px;
+    text-align: center;
+    color: #11dafb;
 }
 
 h3 {
@@ -103,23 +116,63 @@ h3 {
 }
 
 h4 {
-    font-family: "Lato";
-    font-weight: 700;
-    font-size: 2.4rem;
+    /* width: 490px;
+    height: 26px; */
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: 0.3px;
+    color: #ffffff;
 }
+
+h5 {
+    width: 340px;
+    height: 26px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 0.25px;
+    /* text-align: center; */
+    color: #ffffff;
+}
+
 
 strong {
     display: block;
     margin: 25px 0;
+    font-family: Lato;
+    font-size: 18px;
     font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.42px;
+    color: #ffffff;
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 2.3;
+    width: 200px;
+    /* height: 80px; */
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    /* line-height: 0.5; */
+    letter-spacing: 0.32px;
+    color: #ffffff;
 }
+
+/* p .title{
+    font-size: 20px;
+    font-weight: 1200;
+} */
 
 .mb {
     display: none;
@@ -136,8 +189,8 @@ p {
 header {
     width: 1200px;
     height: 80px;
-    margin: auto;
-    padding: 0 15px;
+    margin: 20px auto 0;
+    padding: 0 50px;
 }
 
 h1 {
@@ -149,6 +202,7 @@ h1 {
     font-weight: 400;
     font-size: 1.2rem;
     text-align: center;
+    width:1000px;
 }
 
 .web-nav ul li {
@@ -158,15 +212,15 @@ h1 {
 }
 
 .web-nav a {
-    color: #A9A9A9
+    color: #ffffff;
 }
 
 .web-nav a:hover {
-    color: #FFF;
+    color: #11dafb;
 }
 
 .web-nav a.on {
-    color: #FFF;
+    color: #11dafb;
 }
 
 .language {
@@ -175,23 +229,23 @@ h1 {
 }
 
 .lan-now {
-    width: 54px;
+    width: 80px;
     margin: auto;
     line-height: 40px;
     text-align: left;
     cursor: pointer;
-    background: url(../images/cosmicbc_arrow.svg) no-repeat center right / 10px;
+    background: url(../images/open.svg) no-repeat center right / 10px;
 }
 
 .lan-now.on {
-    background: url(../images/cosmicbc_arrow2.svg) no-repeat center right / 10px;
+    background: url(../images/close.svg) no-repeat center right / 10px;
 }
 
 .lan-list {
     position: absolute;
     width: 100%;
     border: 1px solid #3C3C3C;
-    background-color: #000;
+    background-color: #191919;
 }
 
 .lan-list ul {
@@ -222,225 +276,303 @@ h1 {
 /* MAIN */
 #main {
     background: url(../images/main.png) no-repeat center center / 100%;
+    height:auto;
+    background-size: cover;
+    /* margin-bottom: 100px; */
 }
 
-.main-wrap {
+/* .main-wrap {
     width: 1200px;
     margin: auto;
-    padding: 220px 10px 180px;
-}
+    padding: 50px 10px 50px;
+    text-align: center;
+} */
 
-.main-wrap h2 {
-    width: 315px;
-    margin-bottom:50px;
-}
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #191919;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  
+    /*other pagination*/
+    .swiper-pagination .swiper-pagination-bullet {
+        border-radius: 50px;
+        color: grey;
+        background-color: grey;
+        opacity: 1;
+    }
 
-.main-wrap p {
-    margin-top: 35px;
-    color: #CCC;
-}
+    .swiper-pagination .swiper-pagination-bullet-active {
+        border-radius:  50px;
+        color: #11dafb; /*orange color*/
+        background-color:#11dafb; /*orange color*/
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet {  
+        display:block;  
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets { 
+        width: initial;  
+        top: 90%;  
+        right: 0;  
+        bottom: inherit;  
+        left: inherit;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {  
+        margin: 5px;  
+    }  
+
 /* //MAIN */
 
 
 /* ABOUT */
 #about {
-    align-items: start;
     width: 1200px;
-    margin: auto;
-    padding: 160px 15px 230px;
+    margin:   auto ;
+    padding: 127px 50px 90px;
 }
+
 
 #about h2 {
-    margin-top: 20px; 
+    width: 560px;
+    height: 108px;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.29px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto 30px;
 }
 
-#about p {
-    color: #CCC;
+#about strong {
+    width: 780px;
+    margin: auto;
 }
 
-#about .img {
-    width: 680px;
-    height: 415px;
-}
 /* //ABOUT */
 
 
-/* SERVICES */
-#services {
+/* PRODUCTS */
+#products {
     width: 1200px;
-    margin: auto;
-    padding: 25px 100px 160px;
+    margin:  auto ;
+    padding: 90px 50px ;
 }
 
-#services h2 {
+#products h2 {
     text-align: center;
+    margin-bottom: 90px;
 }
 
-#services .line {
-    margin: 50px auto 120px;
+#products .line {
+    margin: 0 auto 29px;
 }
 
-#services p {
-    color: #676767;
+#products p {
+    color: #FFF;
 }
 
-#services .img {
+/* #products .img {
     width: 480px;
     height: 175px;
+} */
+
+
+
+
+.flex .box{
+    margin-right:17px;
+    margin-bottom: 20px;
 }
 
-.piks {
-    height: 240px;
+.flex .box img{
+    /* width:20px; 
+    height:15px;  */
+    margin-right: 9px;
+    display:inline;
 }
 
-.bitbip {
+.flex .box p{
+    margin-bottom: 9px;
+}
+
+.way {
+    /* height: 240px; */
+}
+
+.slot {
     flex-direction: row-reverse;
-    height: 266px;
-    margin: 120px 0;
+    /* height: 266px; */
+    margin: 180px 0;
 }
 
-.ai-bot {
-    height: 250px;
+.sports {
+    /* height: 250px; */
 }
 
-.prediction {
+.racing {
     flex-direction: row-reverse;
-    height: 245px;
-    margin-top: 120px;
+    /* height: 245px; */
+    margin-top: 180px;
 }
-/* //SERVICES */
-
-
-/* EXCHANGE */
-#exchange {
-    background-color: #FFF;
-}
-
-.ex-wrap {
-    width: 1200px;
-    margin: auto;
-    padding: 100px 15px 125px;
-}
-
-.ex-wrap .text {
-    width: 280px;
-}
-
-.ex-wrap h2 {
-    height: 150px;
-    color: #000;
-}
-
-.ex-wrap p {
-    color: #000;
-}
-
-.ex-wrap .line {
-    background-color: #000;
-}
-
-.ex-wrap .img {
-    width: 780px;
-    height: 625px;
-}
-/* //EXCHANGE */
+/* //PRODUCTS */
 
 
 /* ECOSYSTEM */
-#ecosystem{
-    padding: 160px 15px 60px;
-}
-
-#ecosystem h2 {
+#news{
     width: 1200px;
     margin: auto;
+    padding: 90px 50px;
+}
+
+#news h2 {
     text-align: center;
+    margin-bottom: 90px;
 }
 
-#ecosystem .line {
-    margin: 35px auto 120px;
+#news h4 {
+    margin:20px auto 8.5px;
+    width: 465px;
 }
 
-#ecosystem .img {
-    min-width: 1200px;
+#news .line {
+    margin: 0 auto 29px;
 }
+
+/* #news img {
+    width: 460px;
+    height: auto;
+} */
+
+
 /* //ECOSYSTEM */
 
 
 
-/* PARTNERS */
-#partners {
-    width: 1200px;
+/* CONTACT */
+#contact {
+    width: 700px;
     margin: auto;
-    padding: 110px 0 80px;
+    padding: 90px 0;
 }
 
-#partners h2 {
+#contact h2 {
     text-align: center;
+    margin: 0 auto 90px;
+}
+#contact .address h5 {
+    margin: 0 auto 10px;
+    width: 210px;
+    height: 24px;
 }
 
-#partners .line {
-    margin: 35px auto 70px;
+#contact .line {
+    margin: 0 auto 29px;
 }
 
-.companies ul {
-    width: 1200px;
-    margin: auto;
-    display: flex;
+#contact .flex {
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-
-.companies li {
-    display: inline-block;
-    width: 200px;
-    /* height: 60px; */
-    margin-top: 35px;
-    /* margin-left: 80px; */
-    /* background-color: #FFF; */
-}
-/* //PARTNERS */
-
-/* LSTIGING PARTNERS */
-#listingPartners {
-    width: 1200px;
+#contact img {
+    width: 132px;
+    height: 84px;
+    object-fit: contain;
+    opacity: 0.8;
     margin: auto;
-    padding: 110px 0 80px;
 }
 
-#listingPartners h2 {
+#contact .email p{
+    width: 155px;
+    height: 25px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: 0.3px;
     text-align: center;
+    color: #ffffff;
+    margin-top: 43px;
+    border-bottom: solid 1px #ffffff;
 }
 
-#listingPartners .line {
-    margin: 35px auto 70px;
+
+#contact .address p {
+    width: 210px;
+    height: 50px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
-/* LSTIGING PARTNERS */
+
+
+/* //CONTACT */
+
+
 
 /* FOOTER */
 footer {
     width: 1200px;
     margin: auto;
-    padding: 80px 15px 125px;
+    padding: 90px 50px;
 }
 
-.address {
+/* .address {
     font-family: "Lato";
     font-weight: 800;
     font-size: 1.4rem;
     opacity: .4;
-}
+} */
 
 .copy {
-    font-family: "Lato";
-    font-weight: 800;
-    font-size: 1.1rem;
-    margin-top:0.5rem;
+    width: 480px;
+    height: 24px;
+    transform: rotate(-360deg);
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    margin: auto;
     /* opacity: .8; */
 }
 
-.icon {
+/* .icon {
     width:1.4rem; 
     margin-right: 1.2rem;
 }
@@ -456,7 +588,7 @@ footer {
 
 .sns ul li:hover {
     opacity: 1;
-}
+} */
 /* //FOOTER */
 
 
@@ -468,6 +600,12 @@ footer {
 
 ------------------------------------------------------ */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    #main {
+        /* background: url(../images/main.png) no-repeat center center / 100%; */
+        height:575px;
+        background-size: cover;
+        margin-bottom: 100px;
+    }
     .wrap {
         min-width: 320px;
     }
@@ -502,8 +640,16 @@ footer {
     }
     
     p {
-        font-size: 1rem;
-        line-height: 1.6;
+        width: 206px;
+        height: 80px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: 0.32px;
+        color: #ffffff;
     }
 
     .web {
@@ -677,106 +823,69 @@ footer {
     /* //ABOUT */
     
     
-    /* SERVICES */
-    #services {
+    /* PRODUCTS */
+    #products {
         width: auto;
         min-width: 320px;
         padding: 75px 18px 80px;
     }
 
-    #services .line {
-        margin: 30px auto 35px;
+    #products .line {
+        margin: 30px auto 31px;
     }
     
-    #services .text {
+    #products .text {
         margin-top: 20px;
     }
     
-    #services .img {
+    #products .img {
         /* width: 285px; */
         width: 88%;
         height: auto;
         margin: auto;
     }
 
-    .piks{
+    .way{
         display: block;
         height: auto;
     }
     
-    .bitbip {
+    .slot {
         display: block;
         height: auto;
         margin: 60px 0;
     }
 
-    .ai-bot {
+    .sports {
         display: block;
         height: auto;
     }
     
-    .prediction {
+    .racing {
         display: block;
         height: auto;
         margin-top: 60px;
     }
 
-    /* //SERVICES */
-    
-    
-    /* EXCHANGE */
-    .ex-wrap {
-        position: relative;
-        flex-direction: column;
-        width: auto;
-        min-width: 320px;
-        padding: 70px 0 195px;
-    }
-
-    .ex-wrap h2 {
-        height: auto;
-    }
-
-    .ex-wrap .line {
-        margin: 30px auto 40px;
-    }
-
-    .ex-wrap p {
-        position: absolute;
-        left: 50%;
-        bottom: 70px;
-        /* width: 250px; */
-        width: 80%;
-        /* margin-left: -125px; */
-        margin-left: -40%;
-        line-height: 2.2;
-        letter-spacing: -0.2px;
-    }
-    
-    .ex-wrap .img {
-        /* width: 270px; */
-        width: 80%;
-        height: auto;
-    }
-    /* //EXCHANGE */
+    /* //PRODUCTS */
     
     
     /* ECOSYSTEM */
-    #ecosystem{
+    #news{
         width: auto;
         min-width: 320px;
         padding: 80px 0 30px;
     }
 
-    #ecosystem h2 {
+    #news h2 {
         width: 100%;
     }
 
-    #ecosystem .line {
+    #news .line {
         margin: 25px auto 50px;
     }
     
-    #ecosystem .img {
+    #news .img {
         /* width: 270px; */
         width: 80%;
         min-width: auto;
@@ -786,14 +895,14 @@ footer {
     /* //ECOSYSTEM */
     
     
-    /* PARTNERS */
-    #partners {
+    /* CONTACT */
+    #contact {
         width: auto;
         min-width: 320px;
         padding: 60px 0 20px;
     }
 
-    #partners .line {
+    #contact .line {
         margin: 30px auto 60px;
     }
     
@@ -808,19 +917,8 @@ footer {
         margin-top: 15px;
         /* margin-left: 5%; */
     }
-    /* //PARTNERS */
+    /* //contact */
     
-    /* LISTING PARTNERS */
-    #listingPartners {
-        width: auto;
-        min-width: 320px;
-        padding: 60px 0 20px;
-    }
-
-    #listingPartners .line {
-        margin: 30px auto 60px;
-    }
-    /* LISTING PARTNERS */
 
     /* FOOTER */
     footer {

@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cosmic BC</title>
+    <title>WhattheMex</title>
 
-    <link rel="shortcut icon" href="./images/CB_favicon.png">
-    <link rel="icon" href="./images/CB_favicon.png">
-
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
-
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/locale_lang.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    
 </head>
 
 <body>
@@ -27,7 +28,7 @@
             <header class="flex">
                 <h1>
                     <a href="#main">
-                        <img src="./images/cosmicbc-icon.svg" alt="logo">
+                        <img src="./images/logo.svg" alt="logo">
                     </a>
                 </h1>
 
@@ -36,19 +37,16 @@
                     <nav class="web-nav">
                         <ul class="flex">
                             <li>
-                                <a id="menu_about" href="#about">About</a>
+                                <a id="menu_about" href="#main">ABOUT US</a>
                             </li>
                             <li>
-                                <a id="menu_services" href="#services">Services</a>
+                                <a id="menu_services" href="#products">PRODUCTS</a>
                             </li>
                             <li>
-                                <a id="menu_exchange" href="#exchange">Exchange</a>
+                                <a id="menu_ecosystem" href="#news">NEWS</a>
                             </li>
                             <li>
-                                <a id="menu_ecosystem" href="#ecosystem">Ecosystem</a>
-                            </li>
-                            <li>
-                                <a id="menu_partners" href="#partners">Partners</a>
+                                <a id="menu_partners" href="#contact">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
@@ -56,13 +54,13 @@
                     <div class="language">
                         <ul>
                             <li class="lan-now">
-                                한국어
+                                ENGLISH
                             </li>
 
                             <li class="lan-list">
                                 <ul>
                                     <li>
-                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">English</a>
+                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">ENGLISH</a>
                                     </li>
                                     <li>
                                         <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
@@ -70,9 +68,6 @@
                                     <li>
                                         <a href="javascript:applyLanguage('zh');" data-lang="zh" class="zh">中文</a>
                                     </li>
-                                    <!-- <li>
-                                        <a href="javascript:applyLanguage('jp');" data-lang="jp" class="jp">日本語</a>
-                                    </li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -93,31 +88,28 @@
                     <nav class="mb-nav">
                         <ul>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#main">ABOUT US</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#products">PRODUCTS</a>
                             </li>
                             <li>
-                                <a href="#exchange">Exchange</a>
+                                <a href="#news">NEWS</a>
                             </li>
                             <li>
-                                <a href="#ecosystem">Ecosystem</a>
-                            </li>
-                            <li>
-                                <a href="#partners">Partners</a>
+                                <a href="#contact">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
         
                     <div class="language">
                         <ul>
-                            <li class="lan-click">Language</li>
+                            <li class="lan-click">English</li>
 
                             <li class="lan-list">
                                 <ul>
                                     <li>
-                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">English</a>
+                                        <a href="javascript:applyLanguage('en');" data-lang="en" class="en">ENGLISH</a>
                                     </li>
                                     <li>
                                         <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
@@ -142,233 +134,275 @@
         <!-- MAIN -->
         <div id="main">
             <div class="main-wrap">
-                <h2>
-                    <img src="./images/cosmicbc_txt.svg" alt="logo-text">
-                </h2>
-                <h3>
-                    Blockchain and
-                    <br> 
-                    The Future of Artificial Intelligence
-                </h3>
-                <p class="text-trans" data-strid="main">
-                    블록체인 기술은 우리의 삶을 윤택하게 해주고 미래세대의 삶을 더 편리하게 만들어줍니다. 
-                    <br>
-                    인공지능과 블록체인의 융합을 통해 더 나은 세상으로 함께 나아갑니다.
-                </p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/main-banner-1.png" class="web">
+                            <img src="./images/mb-main-banner-1.png" class="mb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main-banner-2.png" class="web">
+                            <img src="./images/mb-main-banner-1.png" class="mb">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-pagination swiper-pagination-custom">
+                        <div>1 of 2</div>
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- //MAIN -->
 
         <!-- ABOUT -->
-        <div id="about" class="flex">
-            <div class="text">
-                <h2>About Us</h2>
-                <span class="line"></span>
-                <p class="text-trans" data-strid="about">
-                    코스믹BC는 2018년에 설립되었으며 싱가포르에 본사를 두고 있습니다. 우리는 인공지능과 블록체인의 융합을 기반으로 투명하고 효율적인 생태계를 구축합니다. 
-                    <br>
-                    인공지능과 블록체인 기술을 이용한 다양한 서비스와 솔루션들을 제공하고 투자와 비지니스를 위한 플랫폼을 개발합니다.
-                </p>
-            </div>
-
-            <div class="img">
-                <img src="./images/about.png" alt="about-img">
+        <div id="about">
+            <div class="main-text"> 
+                <h2 class="text-trans" data-strid="mainTitle"></h2>
+                <strong class="text-trans" data-strid="mainSub"></strong>
             </div>
         </div>
-        <!-- //ABOUT -->
 
-        <!-- SERVICES -->
-        <div id="services">
-            <h2>Our Services</h2>
+        <!-- ABOUT -->
+
+        <!-- PORDUCTS -->
+        <div id="products">
             <span class="line"></span>
-            <div class="flex piks">
+            <h2>OUR PRODUCTS</h2>
+            <div class="flex way">
                 <div class="img">
-                    <img src="./images/3piks.png" alt="3piks-img">
+                    <img src="./images/3way.png" alt="3way-img">
                 </div>
                 <div class="text">
-                    <h4>3PIKS</h4>
-                    <strong class="text-trans" data-strid="pik">인공지능과 블록체인 기술의 융합으로 만든 차별화된 보상 플랫폼 </strong>
-                    <p class="text-trans" data-strid="pikSub">
-                        인공지능과 휴먼팩터를 결합하여 가상화폐 가격을 예측하는 서비스
-                        <br>
-                        상승, 보합, 하락의 세 구간으로 예측하며 예측 성공 시 AI 토큰으로 보상
-                    </p>
+                    <h4  class="text-trans" data-strid="wayTitle"></h4>
+                    <strong class="text-trans" data-strid="way"></strong>
+                    <div class="flex ">
+                        <div class="flex box">
+                            <img src="./images/ic-predicting.png" alt="ic-predicting-img" style="width:18px; height:22px;">
+                            <div>
+                                <p class="text-trans title" data-strid="extremeTitle" style="font-weight:bold; "></p>
+                                <p class="text-trans" data-strid="extremeSub" ></p>
+                            </div>
+                        </div>
+                        <div class="flex box">
+                            <img src="./images/ic-transparent.png" alt="ic-transparent-img" style="width:24px; height:18px;">
+                            <div>
+                                <p  class="text-trans title" data-strid="transparentTitle" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="transparentSub"></p>
+                            </div>
+                        </div>
+                        <div class="flex box">
+                            <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
+                            <div>
+                                <p  class="text-trans title" data-strid="cryptoTitle" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="cryptoSub"></p>
+                            </div>
+                        </div>
+                        <div class="flex box">
+                                <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
+                            <div>
+                                <p  class="text-trans title" data-strid="langTitle" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="langSub"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="flex bitbip">
-                <div class="img">
-                    <img src="./images/aibitbip.png" alt="bitbip-img">
+            <div class="flex slot">
+                    <div class="img">
+                        <img src="./images/slot.png" alt="slot-img">
+                    </div>
+                    <div class="text">
+                        <h4  class="text-trans" data-strid="slotTitle"></h4>
+                        <strong class="text-trans" data-strid="slot"></strong>
+                        <div class="flex ">
+                            <div class="flex box">
+                                <img src="./images/ic-interface.png" alt="ic-interface-img" style="width:16px; height:24px;">
+                                <div>
+                                    <p class="text-trans" data-strid="interfaceTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="interfaceSub" ></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
+                                <div>
+                                    <p  class="text-trans title" data-strid="cryptoTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="cryptoSub"></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                <img src="./images/ic-themes.png" alt="ic-themes-img" style="width:22px; height:22px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="themesTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="themesSub"></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                    <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="langTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="text">
-                    <h4 class="text-trans" data-strid="bipTitle">AIBitBip</h4>
-                    <strong class="text-trans" data-strid="bip">인공지능으로 가상화폐의 가격변동을 예측 </strong>
-                    <p class="text-trans" data-strid="bipSub">
-                        인공지능을 통해 상승, 하락으로 가격변동 예측하며 유저들에게 푸쉬알림을 통해 정보 제공. 
-                        누구나 사용하기 쉽고 편리한 앱서비스로 유저들은 예측 시그널을 받아 가상화폐 거래 성공.
-                    </p>
+                <div class="flex sports">
+                    <div class="img">
+                        <img src="./images/sports.png" alt="sports-img">
+                    </div>
+                    <div class="text">
+                        <h4  class="text-trans" data-strid="sportsTitle"></h4>
+                        <strong class="text-trans" data-strid="sports"></strong>
+                        <div class="flex ">
+                            <div class="flex box">
+                                <img src="./images/ic-access.png" alt="ic-access-img" style="width:18px; height:22px">
+                                <div>
+                                    <p class="text-trans" data-strid="accessTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="accessSub" ></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                <img src="./images/ic-sportsInfo.png" alt="ic-sportsInfo-img" style="width:22px; height:20px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="sportsInfoTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="sportsInfoSub"></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
+                                <div>
+                                    <p  class="text-trans title" data-strid="cryptoTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="cryptoSub"></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                    <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="langTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="flex ai-bot">
-                <div class="img">
-                    <img src="./images/aibot.png" alt="aiBot-img">
+                <div class="flex racing">
+                    <div class="img">
+                        <img src="./images/racing.png" alt="racing-img">
+                    </div>
+                    <div class="text">
+                        <h4  class="text-trans" data-strid="racingTitle"></h4>
+                        <strong class="text-trans" data-strid="racing"></strong>
+                        <div class="flex ">
+                            <div class="flex box">
+                                <img src="./images/ic-real.png" alt="ic-real-img" style="width:24px; height:23px">
+                                <div>
+                                    <p class="text-trans" data-strid="realTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="realSub" ></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                <img src="./images/ic-type.png" alt="ic-type-img" style="width:21px; height:20px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="typeTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="typeSub"></p>
+                                </div>
+                            </div>
+                            <div class="flex box">
+                                    <img src="./images/ic-racingInfo.png" alt="ic-racingInfo-img" style="width:18px; height:22px;">
+                                    <div>
+                                        <p  class="text-trans title" data-strid="racingInfoTitle" style="font-weight:bold;"></p>
+                                        <p class="text-trans" data-strid="racingInfoSub"></p>
+                                    </div>
+                                </div>
+                            <div class="flex box">
+                                    <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
+                                <div>
+                                    <p  class="text-trans title" data-strid="langTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text">
-                    <h4 class="text-trans" data-strid="botTitle">AI Auto-Trading Bot</h4>
-                    <strong class="text-trans" data-strid="bot">탁월한 실행력과 유동성을 보여주는 오토 트레이딩봇 </strong>
-                    <p class="text-trans" data-strid="botSub">
-                        AIBitBip에서 예측 시그널을 받아 트레이딩을 하기 위한 좋은 기회를 포착하여 유저들이 수익을 창출 할 수 있도록 알림.
-                        거래소에 서비스를 제공하여 트래픽과 유동성을 증가시켜 새로운 마켓을 형성.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex prediction">
-                <div class="img">
-                    <img src="./images/aiprediction.png" alt="prediction-img">
-                </div>
-                <div class="text">
-                    <h4 class="text-trans" data-strid="platTitle">AI Prediction Platform</h4>
-                    <strong class="text-trans" data-strid="plat">인공지능 환경을 개발하고 검증된 데이터를 보호</strong>
-                    <p class="text-trans" data-strid="platSub">
-                        인공지능 연구자들이 트래픽과 AI모델로 구성된 데이터를 오픈소스 라이브러리 환경에 쉽게 접근하고 사용할 수 있게 해주는 서비스 플랫폼.
-                        AI 분야에서 역량이 부족한 기업들에게 필요한 개발 인력들과 환경을 제공하며 AI연구 및 개발자의 검증된 데이터를 보호.
-                    </p>
-                </div>
-            </div>
         </div>
-        <!-- //SERVICES -->
+        <!-- //PRODUCTS -->
 
-        <!-- EXCHANGE -->
-        <div id="exchange">
-            <div class="ex-wrap flex">
-                <div class="text">
-                    <h2 class="text-trans" data-strid="exTitle">Exchange Solution</h2>
-                    <span class="line"></span>
-                    <p class="text-trans" data-strid="exchange">
-                        마진거래소 솔루션은 기존 거래소의 기본 요소인 입금 및 출금과 이에 사용되는 멀티시그니쳐 지갑을 지원.
-                        더불어 무기한을 포함한 선물 거래와 옵션거래를 할 수 있는 솔루션을 함께 제공.
-                    </p>
-                </div>
-                <div class="img">
-                    <img src="./images/exchange_pc.png" alt="exchange-img" class="web">
-                    <img src="./images/exchange_m.png" alt="exchange-img" class="mb">
-                </div>
-            </div>
-        </div>
-        <!-- //EXCHANGE -->
-
-        <!-- ECOSYSTEM -->
-        <div id="ecosystem">
-            <h2>Ecosystem</h2>
+        <!-- NEWS -->
+        <div id="news">
             <span class="line"></span>
-
-            <div class="img">
+            <h2>LATEST NEWS</h2>
+            <div class="flex box">
+                <div >
+                    <img src="./images/news-tree.png" alt="news-tree-img" >
+                    <h4 class="text-trans title" data-strid="newsTitle1" style="font-weight:bold;"></h4>
+                    <p class="text-trans" data-strid="newsSub1"></p>
+                </div>
+                <div>
+                    <img src="./images/news-racing.png" alt="news-racing-img" >
+                    <h4  class="text-trans title" data-strid="newsTitle2" style="font-weight:bold;"></h4>
+                    <p class="text-trans" data-strid="newsSub2"></p>
+                </div>
+            </div>
+            <!-- <div class="img">
                 <img src="./images/ecosystem_pc.png" alt="eco-img" class="web">
                 <img src="./images/ecosystem_m.png" alt="eco-img" class="mb">
-            </div>
+            </div> -->
         </div>
-        <!-- //ECOSYSTEM -->
+        <!-- //NEWS -->
 
-        <!-- PARTNERS -->
-        <div id="partners">
-            <h2>Partners</h2>
+        <!-- CONTACT US-->
+        <div id="contact">
             <span class="line"></span>
-            <div class="companies">
-                <ul id="flex">
-                    <li>
-                        <!-- <a href="javascript:void(0)"> -->
-                            <img src="./images/nbp.png" alt="partners-logo">
-                        <!-- </a> -->
-                    </li>
-                    <li>
-                        <!-- <a href="javascript:void(0)"> -->
-                            <img src="./images/NB.png" alt="partners-logo">
-                        <!-- </a> -->
-                    <li>
-                        <!-- <a href="javascript:void(0)"> -->
-                            <img src="./images/blcokinside.png" alt="partners-logo">
-                        <!-- </a> -->
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- //PARTNERS -->
-
-        <!-- LISTING PARTNERS -->
-        <div id="listingPartners">
-            <h2>Listing Partners</h2>
-            <span class="line"></span>
-            <div class="companies">
-                <ul class="flex">
-
-                    <li>
-                        <!-- <a href="javascript:void(0)"> -->
-                            <img src="./images/digifinex-logo.png" alt="partners-logo">
-                        <!-- </a> -->
-                    </li>
-                    <li>
-                        <!-- <a href="javascript:void(0)"> -->
-                            <img src="./images/coinbene.png" alt="partners-logo">
-                        <!-- </a> -->
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- //LISTING PARTERS -->
-
-        <!-- FOOTER -->
-        <footer class="flex">
-            <div class="address">
-                <ul class="flex">
-                    <li class="icon">
-                    <!-- <li style="width:1.4rem; margin-right:10px; "> -->
-                        <img src="./images/ic-map.svg"  alt="address-icon" >
-                    </li>
-                    <li>
-                        3 Fraser Street, DUO Tower #05-21 Singapore 189352
-                    </li>
-                </ul>
-                <br>
-                <div class="copy">
-                    &copy;2019 CosmicBC Pte., Ltd. All Rights Reserved.
+            <h2>CONTACT US</h2>
+            <div class="flex box">
+                <div>
+                    <img src="./images/logo-contact.png" alt="logo-contact-1" >
+                    <div class="email">
+                        <p class="text-trans" data-strid="contactEmail"></p>
+                        <span class="email-line"></span>
+                    </div>
+                </div>
+                <div class="address">
+                    <h5 class="text-trans" data-strid="contactTitle1"></h5>
+                    <p class="text-trans" data-strid="contactAddress1"></p>
+                    <h5 class="text-trans" data-strid="contactTitle2"></h5>
+                    <p class="text-trans" data-strid="contactAddress2"></p>
                 </div>
             </div>
-            <div class="sns">
-                <ul class="flex">
-                    <li>
-                        <a href="https://t.me/joinchat/MlYdMRYtiKTE2OqJ77DsPg">
-                            <img src="./images/sns-telegram.svg" alt="sns-logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://medium.com/aipe">
-                            <img src="./images/sns-medium.svg" alt="sns-logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/AIPE_official">
-                            <img src="./images/sns-twitter.svg" alt="sns-logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw">
-                            <img src="./images/sns-youtube.svg" alt="sns-logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://open.kakao.com/o/gxoWNPkb">
-                            <img src="./images/sns-kakao.svg" alt="sns-logo">
-                        </a>
-                    </li>
-                </ul>
+        </div>
+        <!-- //CONTACT US -->
+
+
+
+        <!-- FOOTER -->
+        <footer >
+            <div class="copy">
+                &copy; 2019 Whatthemex. All Rights Reserved.
             </div>
         </footer>
         <!-- FOOTER -->
     
     </div>
+      <!-- Swiper JS -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        });
+    </script>
 </body>
 
 </html>
