@@ -44,7 +44,7 @@ $(document).ready(function(){
         } else {
             // $("header").removeClass("scroll");
             $("header").stop().animate({
-                "height": '80px'
+                "height": '60px'
             }, 300);
             $(".header, header").removeClass("bg-black");
         };
