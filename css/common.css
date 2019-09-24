@@ -7,7 +7,7 @@
 ------------------------------------------------------ */
 body, div, h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
     color: #FFF;
-    /* word-wrap: break-word; */
+    word-wrap: break-word;
     word-break: keep-all;
 }
 
@@ -45,17 +45,17 @@ img {
 
 
 .en {
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;;
     font-weight: 400;
 }
 
 .kr {
-    font-family: "Spoqa Han Sans";
+    font-family: 'Lato', sans-serif;;
     font-weight: 400;
 }
 
 .zh {
-    font-family: "Noto Sans SC";
+    font-family: 'Lato', sans-serif;;
     font-weight: 400;
 }
 
@@ -80,9 +80,11 @@ img {
     margin: 5px 10px;
 } */
 
+@media screen and (min-width: 768px)  {
 .bg-black {
     background-color: #191919;
     transition: background-color 1s;
+}
 }
 
 
@@ -98,9 +100,10 @@ h2 {
     /* width: 437px;
     height: 56px; */
     transform: rotate(-360deg);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 36px;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-style: normal;
     font-stretch: normal;
     line-height: 1.81;
@@ -110,17 +113,17 @@ h2 {
 }
 
 h3 {
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 3.2rem;   
 }
 
 h4 {
     /* width: 490px;
     height: 26px; */
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 24px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.08;
@@ -129,11 +132,11 @@ h4 {
 }
 
 h5 {
-    width: 340px;
-    height: 26px;
-    font-family: Lato;
+    /* width: 340px; */
+    /* height: 26px; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    font-weight: 800;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.3;
@@ -144,11 +147,11 @@ h5 {
 
 
 strong {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     display: block;
     margin: 25px 0;
-    font-family: Lato;
     font-size: 18px;
-    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -157,11 +160,11 @@ strong {
 }
 
 p {
-    width: 200px;
+    /* width: 200px; */
     /* height: 80px; */
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     /* line-height: 0.5; */
@@ -172,6 +175,10 @@ p {
 /* p .title{
     font-size: 20px;
     font-weight: 1200;
+} */
+
+/* .web {
+    display: block;
 } */
 
 .mb {
@@ -198,7 +205,7 @@ h1 {
 }
 
 .gnb {
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     text-align: center;
@@ -212,14 +219,20 @@ h1 {
 }
 
 .web-nav a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #ffffff;
 }
 
 .web-nav a:hover {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: #11dafb;
 }
 
 .web-nav a.on {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: #11dafb;
 }
 
@@ -229,6 +242,8 @@ h1 {
 }
 
 .lan-now {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     width: 80px;
     margin: auto;
     line-height: 40px;
@@ -238,6 +253,8 @@ h1 {
 }
 
 .lan-now.on {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     background: url(../images/close.svg) no-repeat center right / 10px;
 }
 
@@ -260,14 +277,20 @@ h1 {
 }
 
 .lan-list a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #A9A9A9;
 }
 
 .lan-list a.on {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #FFF;
 }
 
 .lan-list a:hover {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #FFF;
 }
 /* //HEADER */
@@ -317,6 +340,8 @@ h1 {
         color: grey;
         background-color: grey;
         opacity: 1;
+        width: 5px;
+        height: 5px;
     }
 
     .swiper-pagination .swiper-pagination-bullet-active {
@@ -348,28 +373,30 @@ h1 {
 #about {
     width: 1200px;
     margin:   auto ;
-    padding: 127px 50px 90px;
+    padding: 68px 50px 90px;
 }
 
 
 #about h2 {
-    width: 560px;
-    height: 108px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 36px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: 0.29px;
     text-align: center;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #fff;
     margin: 0 auto 30px;
 }
 
 #about strong {
-    width: 780px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 1000px;
     margin: auto;
+    text-align: center;
 }
 
 /* //ABOUT */
@@ -387,12 +414,24 @@ h1 {
     margin-bottom: 90px;
 }
 
+#products h4 {
+    font-weight: 700;
+}
+
 #products .line {
     margin: 0 auto 29px;
 }
 
+#products strong {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
 #products p {
+    font-weight: 300;
     color: #FFF;
+    width: 210px;
 }
 
 /* #products .img {
@@ -411,12 +450,12 @@ h1 {
 .flex .box img{
     /* width:20px; 
     height:15px;  */
-    margin-right: 9px;
+    margin-right: 12px;
     display:inline;
 }
 
 .flex .box p{
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 
 .way {
@@ -454,8 +493,13 @@ h1 {
 }
 
 #news h4 {
+    font-weight: 700;
     margin:20px auto 8.5px;
     width: 465px;
+}
+
+#news p {
+    font-weight: 300;
 }
 
 #news .line {
@@ -474,66 +518,60 @@ h1 {
 
 /* CONTACT */
 #contact {
-    width: 700px;
+    width: 1200px;
     margin: auto;
     padding: 90px 0;
 }
 
 #contact h2 {
+    font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 0 auto 90px;
 }
-#contact .address h5 {
-    margin: 0 auto 10px;
-    width: 210px;
-    height: 24px;
+#contact h5 {
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.42px;
+    text-align: center;
+    color: #ffffff;
+    margin: 30px auto 50px;
+    text-align: center;
+    /* width: 200px; */
+    /* height: 24px; */
 }
 
 #contact .line {
     margin: 0 auto 29px;
 }
 
-#contact .flex {
-    justify-content: space-around;
-}
+
 
 #contact img {
     width: 132px;
     height: 84px;
     object-fit: contain;
     opacity: 0.8;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #contact .email p{
     width: 155px;
     height: 25px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 13px;
-    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.92;
     letter-spacing: 0.3px;
     text-align: center;
     color: #ffffff;
-    margin-top: 43px;
+    margin: 43px auto 0;
     border-bottom: solid 1px #ffffff;
-}
-
-
-#contact .address p {
-    width: 210px;
-    height: 50px;
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.92;
-    letter-spacing: 0.3px;
-    color: #ffffff;
-    margin-bottom: 20px;
 }
 
 
@@ -559,9 +597,9 @@ footer {
     width: 480px;
     height: 24px;
     transform: rotate(-360deg);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 13px;
-    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -616,18 +654,26 @@ footer {
     }
 
     h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
         font-size: 2.4rem;
     }
     
     h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         font-size: 1.5rem;   
     }
     
     h4 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         font-size: 1.6rem;
     }
     
     strong {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         margin: 15px 0;
         font-size: 1.2rem;
         line-height: 1.5;
@@ -635,11 +681,11 @@ footer {
     }
     
     p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         width: 206px;
         height: 80px;
-        font-family: Lato;
         font-size: 14px;
-        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.43;
@@ -654,6 +700,11 @@ footer {
     .mb {
         display: block;
     }
+
+    .bg-black {
+        background-color: none;
+        transition: background-color 1s;
+    }
     
     
     /* HEADER */
@@ -665,6 +716,8 @@ footer {
     }
     
     h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
         width: 32px;
     }
 
@@ -727,20 +780,30 @@ footer {
         visibility: visible;
         overflow-y: scroll;
     }
+
+    .gnb img {
+        position: absolute;
+        width: 30px;;
+        left: 45%;
+        bottom: 10%;;
+    }
     
 
     .mb-nav{
-        padding: 75px 0 0;
+        padding: 109px 0 0;
     }
 
     .mb-nav li {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     .mb-nav li a {
-        line-height: 1.35;
-        font-size: 2.6rem;
+        height: 56px;
+        line-height: normal;
+        font-size: 16px;
+        letter-spacing: 0.44px;
         color: #FFF;
+        vertical-align: middle;
     }
     
     .language {
@@ -748,21 +811,24 @@ footer {
     }
     
     .lan-click {
-        line-height: 1.35;
-        font-size: 2.6rem;
+        height: 56px;
+        line-height: normal;
+        font-size: 16px;
+        letter-spacing: 0.44px;
         color: #FFF;
     }
     
     .lan-list {
         position: static;
-        margin-top: 25px;
+        /* margin-top: 25px; */
         border: 0;
     }
     
     .lan-list li {
-        line-height: 28px;
-        font-size: 2rem;
-        margin-bottom: 15px;
+        height: 36px;
+        line-height: normal;
+        font-size: 16px;
+        letter-spacing: 0.44px;
     }
 
     .lan-list ul {
@@ -770,6 +836,7 @@ footer {
     }
 
     .lan-list a {
+        height: 36px;
         display: block;
     }
     /* //HEADER */
@@ -820,6 +887,8 @@ footer {
         color: grey;
         background-color: grey;
         opacity: 1;
+        width: 5px;
+        height: 5px;
     }
 
     .swiper-pagination .swiper-pagination-bullet-active {
@@ -831,13 +900,15 @@ footer {
     
     .swiper-pagination-bullet {  
         display:block;  
+
     }
     .swiper-container-horizontal>.swiper-pagination-bullets { 
         width: initial;  
-        top: 90%;  
+        top: 94%;  
         right: 0;  
         bottom: inherit;  
         left: inherit;
+
     }
 
     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {  
@@ -847,7 +918,10 @@ footer {
     .main img {
         position: absolute;
         top: 510px; 
-        left: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
         z-index: 1; 
         width: 270px;
         margin: auto;
@@ -861,38 +935,34 @@ footer {
     width: auto;
     min-width: 320px;
     margin:   auto ;
-    padding: 90px 20px 20px;
+    padding: 64px 20px 20px;
 }
 
 
 #about h2 {
     width: 280px;
-    /* height: 81px; */
-    font-family: Lato;
     font-size: 22px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.23;
     letter-spacing: -0.5px;
     text-align: center;
-    color: #ffffff;
-    margin: 0 auto 40px;
+    color: #FFF;
+    margin: 0 auto 29px;
 }
 
 #about strong {
-    width: 280px;
+    width: 300px;
     /* height: 135px; */
-    font-family: Lato;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.69;
     letter-spacing: -0.36px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 27px;
+    /* margin-bottom: 27px; */
 }
 
 /* //ABOUT */
@@ -903,7 +973,7 @@ footer {
     width: auto;
     min-width: 320px;
     margin:   auto ;
-    padding: 90px 15px 45px;
+    padding: 90px 20px 45px;
 }
 
 #products .line {
@@ -913,9 +983,9 @@ footer {
 #products h2 {
     width: 164px;
     height: 26px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 22px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.18;
@@ -937,7 +1007,8 @@ footer {
 #products h4 {
     /* width: 161px;
     height: 26px; */
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
@@ -948,10 +1019,11 @@ footer {
 }
 
 #products strong {
-    width: 270px;
+    /* width: 270px; */
     /* height: 66px; */
-    font-family: Lato;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -959,6 +1031,11 @@ footer {
     letter-spacing: -0.36px;
     color: #ffffff;
     margin: 10px 0 33px;
+}
+
+#products p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -1008,7 +1085,6 @@ footer {
 #products .flex .box p{
     /* width: 190px; */
     height: auto;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1076,9 +1152,8 @@ footer {
     #news h4 {
         width: 270px;
         /* height: 52px; */
-        font-family: Lato;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 700;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.44;
@@ -1090,7 +1165,6 @@ footer {
     #news p {
         width: 270px;
         /* height: 20px; */
-        font-family: Lato;
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
@@ -1114,62 +1188,47 @@ footer {
         text-align: center;
         margin: 0 auto 40px;
     }
-    #contact .address h5 {
-        margin: 0 auto 10px;
-        font-family: Lato;
-        font-size: 18px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: 0.42px;
-        text-align: center;
-        color: #ffffff;
-    }
-
-    #contact .address p {
-        margin: 0 auto 45px;
-        font-family: Lato;
-        font-size: 13px;
+    #contact h5 {
+        font-size: 16px;
         font-weight: 300;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.92;
-        letter-spacing: 0.3px;
+        line-height: 1.38;
+        letter-spacing: -0.36px;
         text-align: center;
         color: #ffffff;
+        margin: 40px auto;
+        text-align: center;
+        /* width: 200px; */
+        /* height: 24px; */
     }
     
     #contact .line {
         margin: 0 auto 29px;
     }
     
-    #contact .flex {
-        justify-content: space-around;
-        flex-direction: column-reverse;
-    }
+    
     
     #contact img {
         width: 132px;
         height: 84px;
         object-fit: contain;
         opacity: 0.8;
-        margin: 45px auto;
+        margin: 0 auto;
     }
     
     #contact .email p{
-        width: 155px;
+        width: 159px;
         height: 25px;
-        font-family: Lato;
         font-size: 13px;
-        font-weight: normal;
+        font-weight: 700;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.92;
         letter-spacing: 0.3px;
         text-align: center;
         color: #ffffff;
-        margin: 40px auto 0;
+        margin: 43px auto 0;
         border-bottom: solid 1px #ffffff;
     }
     
@@ -1201,7 +1260,6 @@ footer {
         width: 270px;
         height: 25px;
         opacity: 0.6;
-        font-family: Lato;
         font-size: 13px;
         font-weight: 300;
         font-style: normal;

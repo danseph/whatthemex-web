@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WhattheMex</title>
-
     <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css?3">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/locale_lang.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +30,6 @@
                         <img src="./images/logo.svg" alt="logo">
                     </a>
                 </h1>
-
                 <!-- Web Nav -->
                 <div class="web gnb flex">
                     <nav class="web-nav">
@@ -54,7 +52,7 @@
                     <div class="language">
                         <ul>
                             <li class="lan-now">
-                                ENGLISH
+                                LANGUAGE
                             </li>
 
                             <li class="lan-list">
@@ -63,15 +61,14 @@
                                         <a href="javascript:applyLanguage('en');" data-lang="en" class="en">ENGLISH</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
-                                    </li>
-                                    <li>
                                         <a href="javascript:applyLanguage('zh');" data-lang="zh" class="zh">中文</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
+
+
                 </div>
                 <!-- //Web Nav -->
 
@@ -104,15 +101,12 @@
         
                     <div class="language">
                         <ul>
-                            <li class="lan-click">English</li>
+                            <li class="lan-click">LANGUAGE</li>
 
                             <li class="lan-list">
                                 <ul>
                                     <li>
                                         <a href="javascript:applyLanguage('en');" data-lang="en" class="en">ENGLISH</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:applyLanguage('ko');" data-lang="ko" class="kr">한국어</a>
                                     </li>
                                     <li>
                                         <a href="javascript:applyLanguage('zh');" data-lang="zh" class="zh">中文</a>
@@ -124,6 +118,11 @@
                             </li>
                         </ul>
                     </div>
+                    <h1 class="mb">
+                        <a href="#main">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                    </h1>
                 </div>
                 <!-- //Mobile Nav -->
 
@@ -164,8 +163,10 @@
         <!-- ABOUT -->
         <div id="about">
             <div class="about-text"> 
-                <h2 class="text-trans" data-strid="aboutTitle"></h2>
-                <strong class="text-trans" data-strid="aboutSub"></strong>
+                <h2 class="text-trans web" data-strid="aboutTitle"></h2>
+                <h2 class="text-trans mb" data-strid="aboutTitleM"></h2>
+                <strong class="text-trans web" data-strid="aboutSub"></strong>
+                <strong class="text-trans mb" data-strid="aboutSubM"></strong>
             </div>
         </div>
 
@@ -344,12 +345,12 @@
             <div class="flex box">
                 <div class="news-box">
                     <img src="./images/news-tree.png" alt="news-tree-img" >
-                    <h4 class="text-trans title" data-strid="newsTitle1" style="font-weight:bold;"></h4>
+                    <h4 class="text-trans title" data-strid="newsTitle1" ></h4>
                     <p class="text-trans" data-strid="newsSub1"></p>
                 </div>
                 <div class="news-box">
                     <img src="./images/news-racing.png" alt="news-racing-img" >
-                    <h4  class="text-trans title" data-strid="newsTitle2" style="font-weight:bold;"></h4>
+                    <h4  class="text-trans title" data-strid="newsTitle2" ></h4>
                     <p class="text-trans" data-strid="newsSub2"></p>
                 </div>
             </div>
@@ -364,27 +365,19 @@
         <div id="contact">
             <span class="line"></span>
             <h2>CONTACT US</h2>
-            <div class="flex box">
+            <!-- <div class="flex box"> -->
                 <div>
                     <img src="./images/logo-contact.png" alt="logo-contact-1" >
+                    <!-- <div class="text"> -->
+                        <h5 class="text-trans web" data-strid="contactText"></h5>
+                        <h5 class="text-trans mb" data-strid="contactTextM"></h5>
+                    <!-- </div> -->
                     <div class="email">
                         <p class="text-trans" data-strid="contactEmail"></p>
                         <span class="email-line"></span>
                     </div>
                 </div>
-                <div class="address web">
-                    <h5 class="text-trans" data-strid="contactTitle1"></h5>
-                    <p class="text-trans" data-strid="contactAddress1"></p>
-                    <h5 class="text-trans" data-strid="contactTitle2"></h5>
-                    <p class="text-trans" data-strid="contactAddress2"></p>
-                </div>
-                <div class="address mobile">
-                    <h5 class="text-trans" data-strid="contactTitle1"></h5>
-                    <p class="text-trans" data-strid="contactAddressMB1"></p>
-                    <h5 class="text-trans" data-strid="contactTitle2"></h5>
-                    <p class="text-trans" data-strid="contactAddressMB2"></p>
-                </div>
-            </div>
+            <!-- </div> -->
         </div>
         <!-- //CONTACT US -->
 
@@ -405,7 +398,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-        
+
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
