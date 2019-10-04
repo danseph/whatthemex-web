@@ -72,11 +72,33 @@
 @font-face {
 	font-family: 'Noto Sans SC';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
 	src: url('./font/NotoSansSC-700.eot');
 	src: url('./font/NotoSansSC-700.eot?#iefix') format('embedded-opentype'),
          url('./font/NotoSansSC-700.woff2') format('woff2'),
          url('./font/NotoSansSC-700.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans CJK SC';
+	font-style: normal;
+	font-weight: 300;
+	src: url('./font/NotoSansCJKsc-DemiLight.otf') format('opentype');
+
+}
+
+@font-face {
+	font-family: 'Noto Sans CJK SC';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./font/NotoSansCJKsc-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans CJK SC';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./font/NotoSansCJKsc-Bold.otf') format('opentype');
 }
 
 /* 일본어 */

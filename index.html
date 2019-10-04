@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WhattheMex</title>
+    
     <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./css/swiper.min.css">
+
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css?3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/common_en.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/locale_lang.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -35,16 +38,16 @@
                     <nav class="web-nav">
                         <ul class="flex">
                             <li>
-                                <a id="menu_about" href="#main">ABOUT US</a>
+                                <a id="menu_about" href="#about" class="text-trans" data-strid="gnbAbout"></a>
                             </li>
                             <li>
-                                <a id="menu_services" href="#products">PRODUCTS</a>
+                                <a id="menu_products" href="#products" class="text-trans" data-strid="gnbProducts"></a>
                             </li>
+                            <!-- <li>
+                                <a id="menu_news" href="#news"  class="text-trans" data-strid="gnbNews"></a>
+                            </li> -->
                             <li>
-                                <a id="menu_ecosystem" href="#news">NEWS</a>
-                            </li>
-                            <li>
-                                <a id="menu_partners" href="#contact">CONTACT US</a>
+                                <a id="menu_contact" href="#contact"  class="text-trans" data-strid="gnbContact"></a>
                             </li>
                         </ul>
                     </nav>
@@ -90,9 +93,9 @@
                             <li>
                                 <a href="#products">PRODUCTS</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#news">NEWS</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#contact">CONTACT US</a>
                             </li>
@@ -175,7 +178,7 @@
         <!-- PORDUCTS -->
         <div id="products">
             <span class="line"></span>
-            <h2>OUR PRODUCTS</h2>
+            <h2 class="text-trans" data-strid="productsTitle"></h2>
             <div class="flex way">
                 <div class="img">
                     <img src="./images/3way.png" alt="3way-img">
@@ -185,34 +188,50 @@
                     <strong class="text-trans" data-strid="way"></strong>
                     <div class="flex ">
                         <div class="flex box">
-                            <img src="./images/ic-predicting.png" alt="ic-predicting-img" style="width:18px; height:22px;">
-                            <div>
-                                <p class="text-trans" data-strid="extremeTitle" style="font-weight:bold; "></p>
-                                <p class="text-trans" data-strid="extremeSub" ></p>
+                            <img src="./images/ic-transparent.png" alt="ic-transparent-img" style="width:24px; height:18px;">
+                            <div class="web">
+                                <p  class="text-trans" data-strid="transparentTitle" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="transparentSub"></p>
+                            </div>
+                            <div class="mb">
+                                <p  class="text-trans" data-strid="transparentTitleM" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="transparentSubM"></p>
                             </div>
                         </div>
                         <div class="product-line mb"></div>
                         <div class="flex box">
-                            <img src="./images/ic-transparent.png" alt="ic-transparent-img" style="width:24px; height:18px;">
-                            <div>
-                                <p  class="text-trans" data-strid="transparentTitle" style="font-weight:bold;"></p>
-                                <p class="text-trans" data-strid="transparentSub"></p>
+                            <img src="./images/ic-predicting.png" alt="ic-predicting-img" style="width:18px; height:22px;">
+                            <div class="web">
+                                <p class="text-trans" data-strid="extremeTitle" style="font-weight:bold; "></p>
+                                <p class="text-trans" data-strid="extremeSub" ></p>
+                            </div>
+                            <div class="mb">
+                                <p class="text-trans" data-strid="extremeTitleM" style="font-weight:bold; "></p>
+                                <p class="text-trans" data-strid="extremeSubM" ></p>
                             </div>
                         </div>
                         <div class="product-line mb"></div>
                         <div class="flex box">
                             <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
-                            <div>
+                            <div class="web">
                                 <p  class="text-trans" data-strid="cryptoTitle" style="font-weight:bold;"></p>
                                 <p class="text-trans" data-strid="cryptoSub"></p>
+                            </div>
+                            <div class="mb">
+                                <p  class="text-trans" data-strid="cryptoTitleM" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="cryptoSubM"></p>
                             </div>
                         </div>
                         <div class="product-line mb"></div>
                         <div class="flex box">
                                 <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
-                            <div>
-                                <p  class="text-trans" data-strid="langTitle" style="font-weight:bold;"></p>
-                                <p class="text-trans" data-strid="langSub"></p>
+                            <div class="web">
+                                <p  class="text-trans" data-strid="langTitleM" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="langSubM"></p>
+                            </div>
+                            <div class="mb">
+                                <p  class="text-trans" data-strid="langTitleM" style="font-weight:bold;"></p>
+                                <p class="text-trans" data-strid="langSubM"></p>
                             </div>
                         </div>
                     </div>
@@ -229,33 +248,49 @@
                         <div class="flex ">
                             <div class="flex box">
                                 <img src="./images/ic-interface.png" alt="ic-interface-img" style="width:16px; height:24px;">
-                                <div>
+                                <div class="web">
                                     <p class="text-trans" data-strid="interfaceTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="interfaceSub" ></p>
+                                </div>
+                                <div class="mb">
+                                    <p class="text-trans" data-strid="interfaceTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="interfaceSubM" ></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                 <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="cryptoTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="cryptoSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="cryptoTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="cryptoSubM"></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                 <img src="./images/ic-themes.png" alt="ic-themes-img" style="width:22px; height:22px">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="themesTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="themesSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="themesTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="themesSubM"></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                     <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="langTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="langTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSubM"></p>
                                 </div>
                             </div>
                         </div>
@@ -268,37 +303,54 @@
                     </div>
                     <div class="text">
                         <h4  class="text-trans" data-strid="sportsTitle"></h4>
-                        <strong class="text-trans" data-strid="sports"></strong>
+                        <strong class="text-trans web" data-strid="sports"></strong>
+                        <strong class="text-trans mb" data-strid="sportsM"></strong>
                         <div class="flex ">
                             <div class="flex box">
                                 <img src="./images/ic-access.png" alt="ic-access-img" style="width:18px; height:22px">
-                                <div>
+                                <div class="web">
                                     <p class="text-trans" data-strid="accessTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="accessSub" ></p>
+                                </div>
+                                <div class="mb">
+                                    <p class="text-trans" data-strid="accessTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="accessSubM" ></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                 <img src="./images/ic-sportsInfo.png" alt="ic-sportsInfo-img" style="width:22px; height:20px">
-                                <div>
-                                    <p  class="text-trans" data-strid="sportsInfoTitle" style="font-weight:bold;"></p>
+                                <div class="web">
+                                    <p class="text-trans" data-strid="sportsInfoTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="sportsInfoSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="sportsInfoTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="sportsInfoSubM"></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                 <img src="./images/ic-crypto.png" alt="ic-crypto-img" style="width:20px; height:22px;">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="cryptoTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="cryptoSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="cryptoTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="cryptoSubM"></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                     <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="langTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="langTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSubM"></p>
                                 </div>
                             </div>
                         </div>
@@ -311,37 +363,54 @@
                     </div>
                     <div class="text">
                         <h4  class="text-trans" data-strid="racingTitle"></h4>
-                        <strong class="text-trans" data-strid="racing"></strong>
+                        <strong class="text-trans web" data-strid="racing"></strong>
+                        <strong class="text-trans mb" data-strid="racingM"></strong>
                         <div class="flex ">
                             <div class="flex box">
                                 <img src="./images/ic-real.png" alt="ic-real-img" style="width:24px; height:23px">
-                                <div>
+                                <div class="web">
                                     <p class="text-trans" data-strid="realTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="realSub" ></p>
+                                </div>
+                                <div class="mb">
+                                    <p class="text-trans" data-strid="realTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="realSubM" ></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                 <img src="./images/ic-type.png" alt="ic-type-img" style="width:21px; height:20px">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="typeTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="typeSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="typeTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="typeSubM"></p>
                                 </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
-                                    <img src="./images/ic-racingInfo.png" alt="ic-racingInfo-img" style="width:18px; height:22px;">
-                                    <div>
-                                        <p  class="text-trans" data-strid="racingInfoTitle" style="font-weight:bold;"></p>
-                                        <p class="text-trans" data-strid="racingInfoSub"></p>
-                                    </div>
+                                <img src="./images/ic-racingInfo.png" alt="ic-racingInfo-img" style="width:18px; height:22px;">
+                                <div class="web">
+                                    <p  class="text-trans" data-strid="racingInfoTitle" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="racingInfoSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="racingInfoTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="racingInfoSubM"></p>
+                                </div>
                             </div>
                             <div class="product-line mb"></div>
                             <div class="flex box">
                                     <img src="./images/ic-lang.png" alt="ic-lang-img" style="width:22px; height:22px">
-                                <div>
+                                <div class="web">
                                     <p  class="text-trans" data-strid="langTitle" style="font-weight:bold;"></p>
                                     <p class="text-trans" data-strid="langSub"></p>
+                                </div>
+                                <div class="mb">
+                                    <p  class="text-trans" data-strid="langTitleM" style="font-weight:bold;"></p>
+                                    <p class="text-trans" data-strid="langSubM"></p>
                                 </div>
                             </div>
                         </div>
@@ -351,9 +420,9 @@
         <!-- //PRODUCTS -->
 
         <!-- NEWS -->
-        <div id="news">
+        <!-- <div id="news">
             <span class="line"></span>
-            <h2>LATEST NEWS</h2>
+            <h2 class="text-trans" data-strid="newsTitle"></h2>
             <div class="flex box">
                 <div class="news-box">
                     <div class="img">
@@ -370,29 +439,133 @@
                     <p class="text-trans" data-strid="newsSub2"></p>
                 </div>
             </div>
-            <!-- <div class="img">
-                <img src="./images/ecosystem_pc.png" alt="eco-img" class="web">
-                <img src="./images/ecosystem_m.png" alt="eco-img" class="mb">
-            </div> -->
-        </div>
+        </div> -->
         <!-- //NEWS -->
 
         <!-- CONTACT US-->
         <div id="contact">
             <span class="line"></span>
-            <h2>CONTACT US</h2>
+            <h2 class="text-trans" data-strid="contactTitle"></h2>
             <!-- <div class="flex box"> -->
-                <div>
                     <img src="./images/logo-contact.png" alt="logo-contact-1" >
                     <!-- <div class="text"> -->
                         <h5 class="text-trans web" data-strid="contactText"></h5>
                         <h5 class="text-trans mb" data-strid="contactTextM"></h5>
                     <!-- </div> -->
-                    <div class="email">
-                        <p class="text-trans" data-strid="contactEmail"></p>
-                        <span class="email-line"></span>
+                    <div class=button-div >
+                        <button id="modalBtn" class="button">
+                                <p class="text-trans" data-strid="contactEmail"></p>
+                                <!-- <span class="email-line"></span> -->
+                        </button>
                     </div>
-                </div>
+
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header"> -->
+                                <span class="closeBtn">&times;</span>
+                                <!-- <h2>Modal Header</h2>
+                            </div> -->
+                            <div class="modal-body">
+                                <h6 class="modal-title text-trans" data-strid="contactTitle"></h6>
+                                <form id="mail-form">
+                                    <div class="flex">
+                                        <div class="form-example">
+                                            <label for="name" class="text-trans" data-strid="name"> </label>
+                                            <input type="text" required name="name" id="name"  style="text-align:left;">
+                                        </div>
+                                        <div class="form-example">
+                                            <label for="email"  class="text-trans" data-strid="email"> </label>
+                                            <input type="email" required name="email" id="email"  style="text-align:left;">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-example">
+                                        <label for="message" class="text-trans" data-strid="message"></label>
+                                        <textarea required name="message" id="message"></textarea>
+                                    </div>
+                                    <div class="form-example submit-form">
+                                        <!-- <input type="submit" value="Send Message" id="submit" > -->
+                                        <button type="submit" id="submit" class="disabled"><span class="text-trans" data-strid="send"></span></button>
+                                    </div>
+                                    <script type="text/javascript">
+                                        // document.forms[0].id.focus();
+                                        // document.forms[0].id.select();
+
+                                        var storedLang = localStorage.getItem('LANG');
+
+                                        var MAIL_SENDING_SUCCESS = (strings[storedLang] || strings['en']).mailSendingSuccess;
+                                        var MAIL_SENDING_FAILED = (strings[storedLang] || strings['en']).mailSendingFailed;
+
+                                        $('#mail-form').submit(function(e) {
+                                            e.preventDefault();
+
+                                            var name = $('#name').val().trim();
+                                            var email = $('#email').val().trim();
+                                            var message = $('#message').val().trim();
+
+                                            if (!name || !email || !message) {
+                                                alert(MAIL_SENDING_FAILED);
+                                                return false;
+                                            }
+
+                                            var subject = 'mail from ' + name;
+                                            var message = 'Name: ' + name +
+                                                '\n' + 'Email: ' + email +
+                                                '\n' + message;
+
+                                            $.ajax({
+                                                crossDomain: true,
+                                                data: JSON.stringify({
+                                                    message: message,
+                                                    subject: subject,
+                                                }),
+                                                dataType: 'json',
+                                                type: 'POST',
+                                                url: 'https://93mvslzz75.execute-api.us-east-1.amazonaws.com/production',
+                                            })
+                                            .then(function(result) {
+                                                if (result.body === 'done') {
+                                                    alert(MAIL_SENDING_SUCCESS);
+                                                    $('#name').val('')
+                                                    $('#email').val('')
+                                                    $('#message').val('')
+                                                    closeModal();
+                                                } else {
+                                                    alert(MAIL_SENDING_FAILED);
+                                                }
+                                            });
+
+                                            return false;
+                                        });
+
+                                        // $('#name').on('keyup keypress', function(e) {
+                                        //     if($(this).val().length >= 1) {
+                                        //         // alert('not null');
+                                        //         $('#submit').style.background = '#fff';
+                                        //     }
+                                        // });
+
+                                        // $('#name').on('keyup', function() {
+                                        //     if($(this).val().length == 0) {
+                                        //         alert('null');
+                                        //     }
+                                        // })
+
+                                        function changeSubmit(){
+                                            if($('#name').val() !=='' && $('#email').val() !=='' && $('#message').val() !=='') {
+                                                alert('filled');
+                                                $('#submit').style.backgroundColor = 'red';
+                                            }
+                                        }
+                                        changeSubmit;
+                                    </script>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <h3>Modal Fotter</h3>
+                            </div> -->
+                        </div>
+                    </div>
             <!-- </div> -->
         </div>
         <!-- //CONTACT US -->
@@ -400,7 +573,7 @@
 
 
         <!-- FOOTER -->
-        <footer >
+        <footer class="footer">
             <div class="copy">
                 &copy; 2019 Whatthemex. All Rights Reserved.
             </div>
@@ -410,6 +583,7 @@
     </div>
       <!-- Swiper JS -->
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -420,6 +594,24 @@
             clickable: true,
         },
         });
+
+        (function() {
+            var formEl = $('#mail-form input, #mail-form textarea');
+            formEl.keyup(function() {
+                var notEmptyCount = 0;
+                formEl.each(function() {
+                    if($(this).val().length > 0){
+                        notEmptyCount++;
+                    };
+                });
+
+                if (notEmptyCount === formEl.length) {
+                    $('#submit').removeClass('disabled');
+                } else {
+                    $('#submit').addClass('disabled');
+                }
+            });
+        })()
     </script>
 </body>
 
