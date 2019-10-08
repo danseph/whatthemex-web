@@ -82,7 +82,12 @@
 @font-face {
 	font-family: 'Noto Sans CJK SC';
 	font-style: normal;
-	font-weight: 300;
+    font-weight: 300;
+    src: url('./font/NotoSansCJKsc-DemiLight.eot');
+	src: url('./font/NotoSansCJKsc-DemiLight.eot?#iefix') format('embedded-opentype'),
+         url('./font/NotoSansCJKsc-DemiLight.woff2') format('woff2'),
+         url('./font/NotoSansCJKsc-DemiLight.woff') format('woff'),
+         url('./font/NotoSansCJKsc-DemiLight.ttf') format('truetype');
 	src: url('./font/NotoSansCJKsc-DemiLight.otf') format('opentype');
 
 }
@@ -91,6 +96,11 @@
 	font-family: 'Noto Sans CJK SC';
 	font-style: normal;
 	font-weight: 400;
+    src: url('./font/NotoSansCJKsc-Regular.eot');
+	src: url('./font/NotoSansCJKsc-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./font/NotoSansCJKsc-Regular.woff2') format('woff2'),
+         url('./font/NotoSansCJKsc-Regular.woff') format('woff'),
+         url('./font/NotoSansCJKsc-Regular.ttf') format('truetype');
 	src: url('./font/NotoSansCJKsc-Regular.otf') format('opentype');
 }
 
@@ -98,6 +108,11 @@
 	font-family: 'Noto Sans CJK SC';
 	font-style: normal;
 	font-weight: 700;
+    src: url('./font/NotoSansCJKsc-Bold.eot');
+	src: url('./font/NotoSansCJKsc-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./font/NotoSansCJKsc-Bold.woff2') format('woff2'),
+         url('./font/NotoSansCJKsc-Bold.woff') format('woff'),
+         url('./font/NotoSansCJKsc-Bold.ttf') format('truetype');
 	src: url('./font/NotoSansCJKsc-Bold.otf') format('opentype');
 }
 
